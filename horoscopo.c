@@ -15,95 +15,78 @@ main(){
 
     switch(m){
         case 1 :
-            if(d<10){
+            if(d<10)
                 printf("Lagarto");
-                break;
-            }
+            else
                 printf("Mono");
-                break;
+            break;
         case 2:
-            if(d<27){
+            if(d<27)
                 printf("Mono");
-                break;
-            }
+            else
                 printf("Alcon");
-                break;
+            break;
         case 3:
-            if(d<27){
+            if(d<27)
                 printf("Halcon");
-                break;
-            }
-            printf("Jaguar");
+            else
+                printf("Jaguar");
             break;
         case 4:
-            if(d<3){
+            if(d<3)
                 printf("Jaguar");
-                break;
-            }
-            printf("Zorro");
+            else
+                printf("Zorro");
             break;
         case 5:
-            if(d == 1){
+            if(d == 1)
                 printf("Zorro");
-                break;
-            }
-            if(d>=2 && d<=20){
+            if(d>=2 && d<=20)
                 printf("Serpiente");
-                break;
-            }
-            if(d == 30){
+            if(d == 30)
                 printf("Ardilla");
-                break;
-            }
             break;
         case 6:
-            if(d<28){
+            if(d<28)
                 printf("Ardilla");
-                break;
-            }
-             printf("Tortuga");
+            else
+                printf("Tortuga");
              break;
         case 7:
-            if(d<=25){
+            if(d<=25)
                 printf("Tortuga");
-                break;
-            }
-            printf("Murcielago");
+            else
+                printf("Murcielago");
             break;
         case 8:
-            if(d<=26){
+            if(d<=26)
                 printf("Murcielago");
-                break;
-            }
+            else
             printf("Escorpion");
             break;
         case 9:
-            if(d<=23){
+            if(d<=23)
                printf("Escorpion");
-               break;
-            }
-            printf("Venado");
+            else
+                printf("Venado");
             break;
         case 10:
-            if(d<=20){
+            if(d<=20)
                 printf("Venado");
-                break;
-            }
-            printf("Lechuza");
+            else
+                printf("Lechuza");
             break;
         case 11:
-            if(d<=14){
+            if(d<=14)
                 printf("Lechuza");
-                break;
-            }
-            printf("Pavo real");
+            else
+                printf("Pavo real");
             break;
         case 12:
-            if(d<=13){
+            if(d<=13)
                 printf("Pavo real");
-                break;
-            }
-            printf("Lagarto");
+            else
+                printf("Lagarto");
             break;
 
         default:
