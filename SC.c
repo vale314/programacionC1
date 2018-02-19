@@ -3,17 +3,57 @@
 
 
 main(){
-    int n1, t, i;
-    printf("Por favor inrgrese su digito\n");
-    scanf("%d",&n1);
+    int m1, w, i, n, t;
+    do{
+    printf("1 for\n");
+    printf("2 while\n");
+    printf("3 do while\n");
+    scanf("%d",&m1);
     system("cls");
-    t=0;
-    printf("La suma de todos los cuadrados.\n\n\n");
-        for(i=1;i<=n1;i++){
-        printf("%d%c%d +",i,94,i);
-        t=t+i*i;
 
-    }
-    printf("\n \n \nTu suma es: %d\n\n", t);
-    system("pause");
+    printf("Porfavor introdusca su numero\n");
+    scanf("%d",&n);
+
+
+    t=0; i=1;
+    system("cls");
+
+     printf("La suma de todos los cuadrados.\n\n\n");
+
+        switch(m1){
+            case 1:
+                for(i;i<=n;i++){
+                        printf("%d%c%d +",i,94,i);
+                        t=t+i*i;
+
+                    }
+                break;
+            case 2:
+                while(i<=n){
+                    printf("%d%c%d +",i,94,i);
+                    t=t+i*i;
+                    i++;
+                }
+                break;
+            case 3:
+                do{
+                    printf("%d%c%d +",i,94,i);
+                    t=t+i*i;
+                    i++;
+                }while(i<=n);
+                break;
+
+
+            default:
+                printf("\n Incorrecta opcion");
+
+        }
+      printf("\n \n \nTu suma es: %d\n\n", t);
+
+      printf("\ndesea repetir ingrese 2 otro para salir 1\n");
+      scanf("%d",&w);
+      system("cls");
+    }while(w != 1);
+
+
 }
