@@ -17,43 +17,52 @@ main(){
 
 
                 //for despues
-                e=1;
+                e=2;
 
-                for(i=6; i>=0;i--){
+                for(i=5; i>=0;i--){
 
+                    if(i%2 != 0){
                      for(k=0;k<=e;k++){
                             printf("%c",32);
                         }
+
                      //for espacio entre
-                    for(j=1; j<=i; j++){
-                        printf("*");
+                        for(j=1; j<=i; j++){
                         printf("%c",32);
+                        printf("*");
                     }
                     if(i>1){
                         printf("\n");
                     }
-                        e++;
+                        e=e+2;
+                    }
+
 
                 }
-                e=3;
-                for(i=0; i<=3;i++){
+                e=4;
+                printf("\n");
+                for(i=0; i<=5;i++){
+                if(i%2 != 0 && i !=1){
 
-                //for espacio antes
-                    if(c != 0){
-                        for(k=0;k<=e;k++){
-                            printf("%c",32);
+                    //for espacio antes
+                        if(c != 0){
+                            for(k=0;k<=e;k++){
+                                printf("%c",32);
+                            }
+                            e++;
                         }
-                    }
 
-                    //for espacio entre
-                    for(j=1; j<=i; j++){
-                        printf("%c",32);
-                        printf("*");
-                    }
-                            c--;
-                            e--;
+                        //for espacio entre
 
-                    printf("\n");
+                        for(j=1; j<=i; j++){
+                            printf("%c",32);
+                            printf("*");
+                        }
+                                c--;
+                                e--;
+
+                        printf("\n");
+                    }
                 }
 
 
