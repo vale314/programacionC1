@@ -11,62 +11,24 @@ main(){
 
        switch(m){
             case 1:
-                c=6;
-                e=1;
 
+                k=6;
+                for(i=0;i<=6;i++){
 
+                    for(j=0;j<=6;j++){
 
-                //for despues
-                e=2;
-
-                for(i=5; i>=0;i--){
-
-                    if(i%2 != 0){
-                     for(k=0;k<=e;k++){
+                        if(j>=k && k>=3){
                             printf("%c",32);
+                            printf("|");
                         }
-
-                     //for espacio entre
-                        for(j=1; j<=i; j++){
-                        printf("%c",32);
-                        printf("*");
-                    }
-                    if(i>1){
-                        printf("\n");
-                    }
-                        e=e+2;
-                    }
-
-
-                }
-                e=4;
-                printf("\n");
-                for(i=0; i<=5;i++){
-                if(i%2 != 0 && i !=1){
-
-                    //for espacio antes
-                        if(c != 0){
-                            for(k=0;k<=e;k++){
-                                printf("%c",32);
-                            }
-                            e++;
-                        }
-
-                        //for espacio entre
-
-                        for(j=1; j<=i; j++){
+                        if(j<k ){
                             printf("%c",32);
-                            printf("*");
+                            printf("-");
                         }
-                                c--;
-                                e--;
-
-                        printf("\n");
                     }
+                    k--;
+                    printf("\n");
                 }
-
-
-
 
             break;
        }
