@@ -2,27 +2,78 @@
 #include <stdlib.h>
 
 main(){
-    int m,i,j;
+    int m,i,j,n1;
     do{
-       printf("1 While\n");
-       printf("2 Do while\n");
-       printf("3 For\n");
+       system("cls");
+       printf("1 For\n");
+       printf("2 While\n");
+       printf("3 Do-While\n");
        scanf("%d",&m);
-
+       printf("Ingrese Longitud de piramide\n");
+       printf("Numero: ");
+       scanf("%d",&n1);
+       system("cls");
        switch(m){
             case 1:
-                for(i=0; i<=5;i++){
+                printf("Su Operacion fue realizada con el ciclo For\n");
+                for(i=0; i<=n1;i++){
                     for(j=1; j<=i; j++){
                         printf("%d",j);
                     }
                     printf("\n");
                 }
-                for(i=5; i>=0;i--){
+                for(i=n1; i>=0;i--){
                     for(j=1; j<=i; j++){
                         printf("%d",j);
                     }
                     printf("\n");
                 }
+            break;
+            case 2:
+                printf("Su Operacion fue realizada con el ciclo While\n");
+                i=0;
+                while(i<=n1){
+                    j=1;
+                    while(j<=i){
+                        printf("%d",j);
+                        j++;
+                    }
+                    printf("\n");
+                    i++;
+                }
+                i=n1;
+                while(i>=0){
+                    j=1;
+                    while(j<=i){
+                        printf("%d",j);
+                        j++;
+                    }
+                    printf("\n");
+                    i--;
+                }
+            break;
+            case 3:
+                printf("Su Operacion fue realizada con el ciclo Do-While\n");
+                i=0;
+                do{
+                    j=1;
+                    do{
+                        printf("%d",j);
+                        j++;
+                    }while(j<=i);
+                    printf("\n");
+                    i++;
+                }while(i<=n1);
+                i=n1;
+                do{
+                    j=1;
+                    do{
+                        printf("%d",j);
+                        j++;
+                    }while(j<=i);
+                    printf("\n");
+                    i--;
+                }while(i>=0);
             break;
        }
 

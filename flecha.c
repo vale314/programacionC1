@@ -4,14 +4,16 @@
 main(){
     int m,i,j,k,c,e;
     do{
-       printf("1 While\n");
-       printf("2 Do while\n");
-       printf("3 For\n");
+       system("cls");
+       printf("1 For\n");
+       printf("2 While\n");
+       printf("3 Do-While\n");
        scanf("%d",&m);
-
+       system("cls");
        switch(m){
             case 1:
-               c=7;
+                printf("\toperacion realizada con el ciclo For\n");
+                c=7;
                 e=6;
                 for(i=0; i<=6;i++){
 
@@ -48,6 +50,108 @@ main(){
                     }
                     printf("\n");
                 }
+            break;
+            case 2:
+                printf("\toperacion realizada con el ciclo While\n");
+                c=7;
+                e=6;
+                i=0;
+                while(i<=6){
+
+                //for espacio antes
+                    if(c != 0){
+                        k=0;
+                        while(k<=e){
+                            printf("%c",32);
+                            k++;
+                        }
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    while(j<=i){
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }
+
+
+                //for despues
+                e=0;
+                i=0;
+                while(i<=2){
+                    k=0;
+                    while(k<=5){
+                        printf("%c",32);
+                        k++;
+                    }
+                //for espacio entre
+                    j=1;
+                    while(j<=2){
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }
+                    printf("\n");
+                    i++;
+                }
+            break;
+            case 3:
+                printf("\toperacion realizada con el ciclo Do-While\n");
+                c=7;
+                e=6;
+                i=1;
+                do{
+
+                //for espacio antes
+                    if(c != 0){
+                        k=1;
+                        do{
+                            printf("%c",32);
+                            k++;
+                        }while(k<=e);
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    do{
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }while(j<=i);
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }while(i<=6);
+
+
+                //for despues
+                e=0;
+                i=0;
+               do{
+                    k=0;
+                    do{
+                        printf("%c",32);
+                        k++;
+                    }while(k<=5);
+                //for espacio entre
+                    j=1;
+                    do{
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }while(j<=2);
+                    printf("\n");
+                    i++;
+                } while(i<=2);
             break;
        }
 
