@@ -1,3 +1,11 @@
+/*
+    R.O. Valentin Alejandro
+    F: 28/02/18
+    D.P: Barco
+*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,9 +13,10 @@ main(){
     int m,i,j,k,c,e;
     do{
        system("cls");
-       printf("1 While\n");
-       printf("2 Do while\n");
-       printf("3 For\n");
+       printf("Realizar barco\n");
+       printf("1 For\n");
+       printf("2 While\n");
+       printf("3 Do-While\n");
        scanf("%d",&m);
        system("cls");
        switch(m){

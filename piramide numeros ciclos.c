@@ -1,3 +1,10 @@
+/*
+    R.O. Valentin Alejandro
+    F: 28/02/18
+    D.P: Piramide Numeros Ciclos
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,6 +12,7 @@ main(){
     int m,i,j,n1;
     do{
        system("cls");
+       printf("Realizar Piramide De Numeros\n");
        printf("1 For\n");
        printf("2 While\n");
        printf("3 Do-While\n");

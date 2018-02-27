@@ -1,0 +1,68 @@
+		crear una flecha
+
+1 For
+2 While
+3 Do-While
+
+1
+
+        operacion realizada con el ciclo For
+
+       *
+      * *
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+      * *
+      * *
+      * *
+1 para salir 2 para repetir
+
+2
+
+		crear una flecha
+
+1 For
+2 While
+3 Do-While
+
+2
+
+        operacion realizada con el ciclo While
+
+       *
+      * *
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+      * *
+      * *
+      * *
+1 para salir 2 para repetir
+
+2
+
+		crear una flecha
+
+1 For
+2 While
+3 Do-While
+
+3
+
+        operacion realizada con el ciclo Do-While
+
+       *
+      * *
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+      * *
+      * *
+      * *
+1 para salir 2 para repetir
+
+3

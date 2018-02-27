@@ -1,0 +1,69 @@
+	crear un barco
+
+1 For
+2 While
+3 Do-While
+
+1
+
+Ciclo utilizado For
+
+      *
+     * *
+    * * *
+   * * * *
+  * * * * *
+* * * * * * *
+ * * * * * *
+  * * * * *
+   * * * *
+    1 para salir 2 para repetir
+
+2
+
+	crear un barco
+
+1 For
+2 While
+3 Do-While
+
+2
+
+Ciclo utilizado While
+
+      *
+     * *
+    * * *
+   * * * *
+  * * * * *
+* * * * * * *
+ * * * * * *
+  * * * * *
+   * * * *
+    1 para salir 2 para repetir
+
+2
+
+
+	crear un barco
+
+1 For
+2 While
+3 Do-While
+
+3
+
+Ciclo utilizado Do-While
+
+      *
+     * *
+    * * *
+   * * * *
+  * * * * *
+* * * * * * *
+ * * * * * *
+  * * * * *
+   * * * *
+    1 para salir 2 para repetir
+
+1

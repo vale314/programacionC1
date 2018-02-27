@@ -1,3 +1,10 @@
+/*
+    R.O. Valentin Alejandro
+    F: 28/02/18
+    D.P: Tablas
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,6 +12,7 @@ main(){
     int m,i,j,k,c,e;
     do{
        system("cls");
+       printf("Realizar las tablas de Multiplicar\n");
        printf("1 For\n");
        printf("2 While\n");
        printf("3 Do While\n");

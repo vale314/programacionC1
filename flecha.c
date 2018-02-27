@@ -1,9 +1,18 @@
+/*
+    R.O. Valentin Alejandro
+    F: 28/02/18
+    D.P: Flechas
+*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
 main(){
     int m,i,j,k,c,e;
     do{
+       printf("Realizar Flecha\n");
        system("cls");
        printf("1 For\n");
        printf("2 While\n");
