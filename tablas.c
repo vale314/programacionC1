@@ -30,9 +30,9 @@ main(){
 
                     for(i=1;i<=10;i++){
                         for(j=1;j<=5;j++){
-                            if(i>j){
+                            //if(i>j){
                                 printf("%d*%d=%d",j,i,j*i);
-                            }
+                            //}
                             printf("\t\t\t");
                         }
                         printf("\n");
@@ -46,6 +46,18 @@ main(){
                     }
                     printf("\n");
 
+
+
+                    for(i=1;i<=10;i++){
+                        for(j=6;j<=10;j++){
+                            //if(i>j){
+                                printf("%d*%d=%d",j,i,j*i);
+                            //}
+                            printf("\t\t\t");
+                        }
+                        printf("\n");
+
+/*
                     for(k=10;k>0;k--){
                             for(j=6;j<=10;j++){
                                 if(j>k){
@@ -54,7 +66,7 @@ main(){
                                     printf("\t\t\t");
 
                             }
-                            printf("\n");
+                            printf("\n");***/
                 }
 
             break;
@@ -72,9 +84,9 @@ main(){
                     while(i<=10){
                         j=1;
                         while(j<=5){
-                            if(i>j){
+                            //if(i>j){
                                 printf("%d*%d=%d",j,i,j*i);
-                            }
+                            //}
                             printf("\t\t\t");
                             j++;
                         }
@@ -89,18 +101,18 @@ main(){
                         i++;
                     }
                     printf("\n");
-                    k=10;
-                    while(k>0){
-                            j=6;
-                            while(j<=10){
-                                if(j>k){
-                                    printf("%d*%d=%d ",j,k,k*j);
-                                }
-                                    printf("\t\t\t");
-                                    j++;
-                            }
-                            printf("\n");
-                            k--;
+                    i=1;
+                    while(i<=10){
+                        j=6;
+                        while(j<=10){
+                            //if(i>j){
+                                printf("%d*%d=%d",j,i,j*i);
+                            //}
+                            printf("\t\t\t");
+                            j++;
+                        }
+                        printf("\n");
+                        i++;
                     }
               break;
             case 3:
@@ -116,9 +128,9 @@ main(){
                     do{
                         j=1;
                         do{
-                            if(i>j){
+                            //if(i>j){
                                 printf("%d*%d=%d",j,i,j*i);
-                            }
+                            //}
                             printf("\t\t\t");
                             j++;
                         }while(j<=5);
@@ -133,19 +145,19 @@ main(){
                         i++;
                     }while(i<=10);
                     printf("\n");
-                    k=10;
+                    i=1;
                     do{
-                            j=6;
-                            do{
-                                if(j>k){
-                                    printf("%d*%d=%d ",j,k,k*j);
-                                }
-                                    printf("\t\t\t");
-                                    j++;
-                            }while(j<=10);
-                            printf("\n");
-                            k--;
-                    }while(k>0);
+                        j=1;
+                        do{
+                            //if(i>j){
+                                printf("%d*%d=%d",j,i,j*i);
+                            //}
+                            printf("\t\t\t");
+                            j++;
+                        }while(j<=5);
+                        printf("\n");
+                        i++;
+                    }while(i<=10);
               break;
         }
      printf("\n");

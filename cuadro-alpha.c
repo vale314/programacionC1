@@ -24,16 +24,19 @@ main(){
                     for(j=0;j<=6;j++){
 
 
-                        if((i>=c && i<=e) && (j==e || j>e)){
+                        if((i>0 && i<6) && j==5){
                             printf("%c",32);
                             printf("|");
 
                         }
-                        if((i>=c && i>=e) && (j<=e || j==e)){
+                        if((i>=0 && i<=6) && j==6){
                             printf("%c",32);
                             printf("|");
-                            e=e+2;
 
+                        }
+                        if((i>1 && i<5) && j==4){
+                            printf("%c",32);
+                            printf("|");
 
                         }
 
@@ -202,3 +205,4 @@ main(){
      scanf("%d",&m);
     }while(m != 1);
 }
+

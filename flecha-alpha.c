@@ -1,7 +1,7 @@
 /*
     R.O. Valentin Alejandro
     F: 28/02/18
-    D.P: Barco
+    D.P: Flechas
 */
 
 
@@ -10,23 +10,25 @@
 #include <stdlib.h>
 
 main(){
-    int m,i,j,k,c,e,t,l;
+    int m,i,j,k,c,e,t;
     do{
+       printf("Realizar Flecha\n");
        system("cls");
-       printf("Realizar barco\n");
        printf("1 For\n");
        printf("2 While\n");
        printf("3 Do-While\n");
        scanf("%d",&m);
        system("cls");
-       printf("Introdusca Su tamaño\n");
+
+       printf("Introdusca su Tamaño\n");
        scanf("%d",&t);
+
        switch(m){
             case 1:
-                printf("Ciclo utilizado For\n");
+                printf("\toperacion realizada con el ciclo For\n");
                 c=t+1;
                 e=t;
-                for(i=0; i<=t-2;i++){
+                for(i=0; i<=t;i++){
 
                 //for espacio antes
                     if(c != 0){
@@ -37,8 +39,7 @@ main(){
 
                     //for espacio entre
                     for(j=1; j<=i; j++){
-
-                        //printf("%c",32);
+                        printf("%c",32);
                         printf("*");
                     }
                             c--;
@@ -46,32 +47,25 @@ main(){
 
                     printf("\n");
                 }
-                for(i=0;i<=t/3;i++){
 
-                    for(j=0;j<=t;j++){
-                        printf("%c",32);
-                    }
-                    printf("*\n");
-
-                }
 
                 //for despues
                 e=0;
-                for(i=t+2; i>=4;i--){
-                     //for espacio entre
-                    for(j=1; j<=i; j++){
+
+                for(i=0; i<=2;i++){
+                    for(k=0;k<=t-1;k++){
+                        printf("%c",32);
+                    }
+                //for espacio entre
+                    for(j=1; j<=2; j++){
                         printf("*");
                         printf("%c",32);
                     }
                     printf("\n");
-                     for(k=0;k<=e;k++){
-                            printf("%c",32);
-                        }
-                        e++;
                 }
             break;
             case 2:
-                printf("Ciclo utilizado While\n");
+                printf("\toperacion realizada con el ciclo While\n");
                 c=t+1;
                 e=t;
                 i=0;
@@ -89,7 +83,7 @@ main(){
                     //for espacio entre
                     j=1;
                     while(j<=i){
-                        //printf("%c",32);
+                        printf("%c",32);
                         printf("*");
                         j++;
                     }
@@ -100,60 +94,47 @@ main(){
                     i++;
                 }
 
-                i=0;
-                while(i<=t/3){
-                    j=0;
-                    while(j<=t){
-                        printf("%c",32);
-                        j++;
-                    }
-                    printf("*\n");
-                    i++;
-                }
-
-
 
                 //for despues
                 e=0;
-                i=t+2;
-                while(i>=4){
-                     //for espacio entre
+                i=0;
+                while(i<=2){
+                    k=0;
+                    while(k<=t-1){
+                        printf("%c",32);
+                        k++;
+                    }
+                //for espacio entre
                     j=1;
-                    while(j<=i){
+                    while(j<=2){
                         printf("*");
                         printf("%c",32);
                         j++;
                     }
                     printf("\n");
-                    k=0;
-                    while(k<=e){
-                            printf("%c",32);
-                            k++;
-                    }
-                        e++;
-                        i--;
+                    i++;
                 }
             break;
             case 3:
-                printf("Ciclo utilizado Do-While\n");
+                printf("\toperacion realizada con el ciclo Do-While\n");
                 c=t+1;
                 e=t;
-                i=0;
+                i=1;
                 do{
 
                 //for espacio antes
                     if(c != 0){
-                        k=0;
-                        while(k<=e){
+                        k=1;
+                        do{
                             printf("%c",32);
                             k++;
-                        }
+                        }while(k<=e);
                     }
 
                     //for espacio entre
                     j=1;
                     do{
-                        //printf("%c",32);
+                        printf("%c",32);
                         printf("*");
                         j++;
                     }while(j<=i);
@@ -165,38 +146,25 @@ main(){
                 }while(i<=t);
 
 
-
-                i=0;
-                do{
-                    j=0;
-                    do{
-                        printf("%c",32);
-                        j++;
-                    }while(j<=t);
-                    printf("*\n");
-                    i++;
-                }while(i<=t/3);
-
                 //for despues
                 e=0;
-                i=t+2;
-                do{
-                     //for espacio entre
+                i=0;
+               do{
+                    k=0;
+                    do{
+                        printf("%c",32);
+                        k++;
+                    }while(k<=t-1);
+                //for espacio entre
                     j=1;
                     do{
                         printf("*");
                         printf("%c",32);
                         j++;
-                    }while(j<=i);
+                    }while(j<=2);
                     printf("\n");
-                    k=0;
-                    do{
-                            printf("%c",32);
-                            k++;
-                    }while(k<=e);
-                        e++;
-                        i--;
-                }while(i>=4);
+                    i++;
+                } while(i<=2);
             break;
        }
 
