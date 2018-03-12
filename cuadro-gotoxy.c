@@ -6,7 +6,7 @@
 void delay(int number_of_seconds)
 {
     // Converting time into milli_seconds
-    int milli_seconds = 50 * number_of_seconds;
+    int milli_seconds = 10 * number_of_seconds;
 
     // Stroing start time
     clock_t start_time = clock();
