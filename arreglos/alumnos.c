@@ -1,3 +1,7 @@
+/*R.O Valentin Alejandro
+    F:13/03/18
+    DP:Alumnos
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #define tam 100
@@ -5,9 +9,8 @@
 main(){
     int t, lista[tam],m,i,r,prome,repro,aprob;
     do{
-    printf("Por favor ingrese el tamaño de la lista \n");
-    scanf("%d",&t);
     system("cls");
+    printf("\tPromedio de alumnos\n");
     printf("1 For\n");
     printf("2 While\n");
     printf("3 Do While\n");
@@ -18,6 +21,9 @@ main(){
     prome=0;
     switch(m){
         case 1:
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             for(i=0;i<t;i++){
                 printf("Calificacion %d ",i+1);
@@ -49,6 +55,9 @@ main(){
             printf("Promedio: %d\n",prome);
         break;
         case 2:
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             while(i<t){
@@ -86,6 +95,9 @@ main(){
             printf("Promedio: %d\n",prome);
         break;
         case 3:
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             do{

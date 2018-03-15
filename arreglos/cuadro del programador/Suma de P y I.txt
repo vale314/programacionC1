@@ -1,0 +1,70 @@
+        Suma de Pares E Impares
+1 For
+2 While
+3 Do While
+1
+Por favor ingrese el tama±o de la lista
+5
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+suma de pares:6
+cantidad de pares:2
+suma de impares:9
+cantidad de impares:3
+
+Desea repetir 1
+
+1
+
+        Suma de Pares E Impares
+1 For
+2 While
+3 Do While
+2
+Por favor ingrese el tama±o de la lista
+5
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+suma de pares:6
+cantidad de pares:2
+suma de impares:9
+cantidad de impares:3
+
+Desea repetir 1
+
+1
+
+        Suma de Pares E Impares
+1 For
+2 While
+3 Do While
+3
+Por favor ingrese el tama±o de la lista
+5
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+suma de pares:6
+cantidad de pares:2
+suma de impares:9
+cantidad de impares:3
+
+Desea repetir 1
+2

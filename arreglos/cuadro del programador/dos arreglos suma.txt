@@ -1,0 +1,99 @@
+        Dos arreglos suma
+1 For
+2 While
+3 Do While
+1
+
+Por favor ingrese el tama±o de la lista
+5
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Ingrese Los Elementos de lista 2
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Posicion         Arreglo 1       Arreglo 2       Arreglo 3
+0                 1              1               2
+1                 2              2               4
+2                 3              3               6
+3                 4              4               8
+4                 5              5               10
+Desea repetir 1
+
+
+
+1
+
+
+        Dos arreglos suma
+1 For
+2 While
+3 Do While
+2
+Por favor ingrese el tama±o de la lista
+5
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Ingrese Los Elementos de lista 2
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Posicion         Arreglo 1       Arreglo 2       Arreglo 3
+0                 1              1               2
+1                 2              2               4
+2                 3              3               6
+3                 4              4               8
+4                 5              5               10
+Desea repetir 1
+
+
+1
+        Dos arreglos suma
+1 For
+2 While
+3 Do While
+3
+Por favor ingrese el tama±o de la lista
+5
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Ingrese Los Elementos de lista 2
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Posicion         Arreglo 1       Arreglo 2       Arreglo 3
+0                 1              1               2
+1                 2              2               4
+2                 3              3               6
+3                 4              4               8
+4                 5              5               10
+Desea repetir 1
+
+2

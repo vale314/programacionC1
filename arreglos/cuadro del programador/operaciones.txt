@@ -1,0 +1,75 @@
+        Operacion con arreglo
+1 For
+2 While
+3 Do While
+1
+
+Por favor ingrese el tama±o de la lista
+5
+
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Posicion         Elemento        Operacion
+0                       1               0
+1                       2               1
+2                       3               0
+3                       4               1
+4                       5               0
+Desea repetir 1
+
+1
+
+        Operacion con arreglo
+1 For
+2 While
+3 Do While
+2
+
+Por favor ingrese el tama±o de la lista
+5
+
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Posicion         Elemento        Operacion
+0                       1               0
+1                       2               1
+2                       3               0
+3                       4               1
+4                       5               0
+Desea repetir 1
+        Operacion con arreglo
+1 For
+2 While
+3 Do While
+3
+
+Por favor ingrese el tama±o de la lista
+5
+
+
+Ingrese Los Elementos de lista 1
+Elemento 1 1
+Elemento 2 2
+Elemento 3 3
+Elemento 4 4
+Elemento 5 5
+
+Posicion         Elemento        Operacion
+0                       1               0
+1                       2               1
+2                       3               0
+3                       4               1
+4                       5               0
+Desea repetir 1

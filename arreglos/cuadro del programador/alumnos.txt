@@ -1,0 +1,95 @@
+        Promedio de alumnos
+1 For
+2 While
+3 Do While
+
+1
+
+Por favor ingrese el tama±o de la lista
+
+Ingrese Los Elementos de lista 1
+Calificacion 1 1
+Calificacion 2 2
+Calificacion 3 3
+Calificacion 4 4
+Calificacion 5 5
+
+
+        Alumnos
+Reprobados       Aprobados
+1
+2
+3
+4
+5
+
+Cantidad de Reprobados: 5
+Cantidad de Aprobados: 0
+Promedio: 3
+Desea repetir 1
+
+1
+
+  Promedio de alumnos
+1 For
+2 While
+3 Do While
+
+2
+
+Por favor ingrese el tama±o de la lista
+
+Ingrese Los Elementos de lista 1
+Calificacion 1 1
+Calificacion 2 2
+Calificacion 3 3
+Calificacion 4 4
+Calificacion 5 5
+
+
+        Alumnos
+Reprobados       Aprobados
+1
+2
+3
+4
+5
+
+Cantidad de Reprobados: 5
+Cantidad de Aprobados: 0
+Promedio: 3
+Desea repetir 1
+
+1
+
+  Promedio de alumnos
+1 For
+2 While
+3 Do While
+
+3
+
+Por favor ingrese el tama±o de la lista
+
+Ingrese Los Elementos de lista 1
+Calificacion 1 1
+Calificacion 2 2
+Calificacion 3 3
+Calificacion 4 4
+Calificacion 5 5
+
+
+        Alumnos
+Reprobados       Aprobados
+1
+2
+3
+4
+5
+
+Cantidad de Reprobados: 5
+Cantidad de Aprobados: 0
+Promedio: 3
+Desea repetir 1
+
+2
