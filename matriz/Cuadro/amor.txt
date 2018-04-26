@@ -1,0 +1,24 @@
+        Suma De Matrices
+1 For
+2 While
+3 Do While
+
+
+
+
+
+
+
+        Matriz 1
+        a  M  O  a
+        T  m  m  O
+        R  o  o  O
+        r  L  A  r
+La suma de
+
+
+a+m+o+r=amor                    a+m+o+r=amor                    M+O+T+O+R+O+LA=MOTOROLA
+
+
+Desea repetir 1
+

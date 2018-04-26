@@ -19,11 +19,10 @@ main(){
     system("cls");
         switch(m){
             case 1:
-                    for(i=0; i<=n; i++){
+                    for( ;res3<n; ){
                         res3=res1+res2;
                         res1=res2;
                         res2=res3;
-                        if(i<=5)
                             printf("%d     ",res3);
                     }
 
