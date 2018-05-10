@@ -41,12 +41,16 @@ void subMenu2(){
         scanf("%d",&m1);
         switch(m1){
             case 1:
+                operacionesASPSR();
             break;
             case 2:
+                operacionesASPCR();
             break;
             case 3:
+                operacionesACPSR();
             break;
             case 4:
+                operacionesACPCR();
             break;
             case 5:
             break;
@@ -185,6 +189,15 @@ void operacionesCPCR();
 /***FIN**/
 
 /*** Fin**/
+
+
+/***SubMenu2**/
+void operacionesASPSR();
+void operacionesASPCR();
+void operacionesACPSR();
+void operacionesACPCR();
+
+/***FIN**/
 
 main(){
     int m1;
@@ -781,3 +794,9 @@ void operacionesCPCR(){
 
 }
 /*** Fin**/
+
+
+
+/***SubMenu**/
+
+/***Fin**/
