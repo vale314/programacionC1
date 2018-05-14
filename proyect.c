@@ -248,15 +248,15 @@ void operacionesRSPSR();
 void operacionesRSPCR();
 
     /***For**/
-    void cuadroFRSPCR();
+    int cuadroFRSPCR();
     /***Fin**/
 
     /***While**/
-    void cuadroWRSPCR();
+    int cuadroWRSPCR();
     /***Fin**/
 
     /***Do-While**/
-    void cuadroDWRSPCR();
+    int cuadroDWRSPCR();
     /***Fin**/
 
 /***Fin**/
@@ -282,15 +282,15 @@ void operacionesRCPSR();
 void operacionesRCPCR();
 
     /***For**/
-    void cuadroFRCPCR();
+    int cuadroFRCPCR();
     /***Fin**/
 
     /***While**/
-    void cuadroWRCPCR();
+    int cuadroWRCPCR();
     /***Fin**/
 
     /***Do-While**/
-    void cuadroDWRCPCR();
+    int cuadroDWRCPCR();
     /***Fin**/
 
 /***Fin**/
@@ -915,6 +915,15 @@ void operacionesACPCR(){
 
 /***FIN**/
 
+
+
+
+
+
+
+
+
+
 /***SubMenu3**/
 
 
@@ -1159,31 +1168,183 @@ void operacionesRSPSR(){
 
 
 
-/***RSPCR**/
+/***RCPSR**/
     /***FOR**/
-        void cuadroFRSPCR(){
+    void cuadroFRCPSR(int tam){
+            HANDLE hCon;
+            hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD dwPos;
+            dwPos.Y = 0;
+            int i,j, k,l,m ,r;
+            system("cls");
+
+                for(i=1;i<tam;i++){
+                    for(j=1;j<=tam-1;j++){
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    for(j=1;j<=tam-1;j++){
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    for(j=tam-1;j>0;j--){
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+
+                    for(j=tam-1;j>0;j--){
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    tam--;
+
+                }
+
+            printf("\n\n\n");
         }
     /***While**/
-        void cuadroWRSPCR(){
+    void cuadroWRCPSR(int tam){
+            HANDLE hCon;
+            hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD dwPos;
+            dwPos.Y = 0;
+            int i,j, k,l,m ,r;
+
+                system("cls");
+
+                i=1;
+                    while(i<tam){
+                        j=1;
+                        while(j<=tam-1){
+                            dwPos.X = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j++;
+                        }
+                        j=1;
+                        while(j<=tam-1){
+                            dwPos.Y = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j++;
+                        }
+                        j=tam-1;
+                        while(j>0){
+                            if(j<i){
+                                break;
+                            }
+                            dwPos.X = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j--;
+                        }
+                        j=tam-1;
+                        while(j>0){
+                            if(j<i){
+                                break;
+                            }
+                            dwPos.Y = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j--;
+                        }
+                        tam--;
+                        i++;
+                    }
+
+                printf("\n\n\n");
         }
     /***Do-While**/
-        void cuadroDWRSPCR(){
+    void cuadroDWRCPSR(int tam){
+        HANDLE hCon;
+        hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+        COORD dwPos;
+        dwPos.Y = 0;
+        int i,j, k,l,m ,r;
+
+            system("cls");
+
+            i=1;
+                do{
+                    j=1;
+                    do{
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j++;
+                    }while(j<=tam-1);
+                    j=1;
+                    do{
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j++;
+                    }while(j<=tam-1);
+                    j=tam-1;
+                    do{
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j--;
+                    }while(j>0);
+                    j=tam-1;
+                    do{
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j--;
+                    }while(j>0);
+                    tam--;
+                    i++;
+                }while(i<tam);
         }
 
 
 
-    void operacionesRSPCR(){
-    int m,m5;
+    void operacionesRCPSR(){
+   int m,m5,tam;
     do{
-        printf("1 For/n2 While/n3 Do-While");
+        system("cls");
+        printf("1 For\n2 While\n3 Do-While\n4 Salir");
         scanf("%d",&m);
         switch(m){
             case 1:
                 do{
-                    printf("1 Cuadro/n2 While/n3 Salir");
-                    scanf("%d",&m);
-                    switch(m){
+                    printf("1 Cuadro\n2 \n3 Salir\n");
+                    scanf("%d",&m5);
+                    switch(m5){
                         case 1:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            cuadroFRCPSR(tam);
                         break;
                         case 2:
                         break;
@@ -1195,13 +1356,49 @@ void operacionesRSPSR(){
                 }while(m5!=3);
             break;
             case 2:
+                do{
+                    printf("1 Cuadro\n2 \n3 Salir");
+                    scanf("%d",&m5);
+                    switch(m5){
+                        case 1:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            cuadroWRCPSR(tam);
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                            printf("Incorrecto/n");
+                    }
+                }while(m5!=3);
             break;
             case 3:
+                do{
+                    printf("1 Cuadro\n2 While\n3 Salir");
+                    scanf("%d",&m5);
+                    switch(m5){
+                        case 1:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            cuadroDWRCPSR(tam);
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                            printf("Incorrecto/n");
+                    }
+                }while(m5!=3);
+            break;
+            case  4:
             break;
             default:
                 printf("Incorrecto/n");
         }
-    }while(m!=3);
+    }while(m!=4);
 }
 /***Fin**/
 
@@ -1209,28 +1406,193 @@ void operacionesRSPSR(){
 
 
 
-/***RCPSR**/
+/***RSPCR**/
     /***FOR**/
-        void cuadroFRCPSR();
+        int cuadroFRSPCR(){
+            HANDLE hCon;
+            hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD dwPos;
+            dwPos.Y = 0;
+            int tam,i,j, k,l,m ,r;
+            tam=0;
+            printf("Introdusca su Base\n");
+            scanf("%d",&tam);
+            system("cls");
+
+                for(i=1;i<tam;i++){
+                    for(j=1;j<=tam-1;j++){
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    for(j=1;j<=tam-1;j++){
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    for(j=tam-1;j>0;j--){
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+
+                    for(j=tam-1;j>0;j--){
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    tam--;
+
+                }
+
+            return(1);
+        }
     /***While**/
-        void cuadroWRCPSR();
+        int cuadroWRSPCR(){
+            HANDLE hCon;
+            hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD dwPos;
+            dwPos.Y = 0;
+            int tam,i,j, k,l,m ,r;
+            tam=0;
+            printf("Introdusca su Base\n");
+            scanf("%d",&tam);
+                system("cls");
+
+                i=1;
+                    while(i<tam){
+                        j=1;
+                        while(j<=tam-1){
+                            dwPos.X = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j++;
+                        }
+                        j=1;
+                        while(j<=tam-1){
+                            dwPos.Y = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j++;
+                        }
+                        j=tam-1;
+                        while(j>0){
+                            if(j<i){
+                                break;
+                            }
+                            dwPos.X = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j--;
+                        }
+                        j=tam-1;
+                        while(j>0){
+                            if(j<i){
+                                break;
+                            }
+                            dwPos.Y = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j--;
+                        }
+                        tam--;
+                        i++;
+                    }
+
+                return(1);
+        }
     /***Do-While**/
-        void cuadroDWRCPSR();
+        int cuadroDWRSPCR(){
+
+
+        HANDLE hCon;
+        hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+        COORD dwPos;
+        dwPos.Y = 0;
+        int tam,i,j, k,l,m ,r;
+        tam=0;
+         printf("Introdusca su Base\n");
+            scanf("%d",&tam);
+            system("cls");
+
+            i=1;
+                do{
+                    j=1;
+                    do{
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j++;
+                    }while(j<=tam-1);
+                    j=1;
+                    do{
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j++;
+                    }while(j<=tam-1);
+                    j=tam-1;
+                    do{
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j--;
+                    }while(j>0);
+                    j=tam-1;
+                    do{
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j--;
+                    }while(j>0);
+                    tam--;
+                    i++;
+                }while(i<tam);
+
+            return(1);
+        }
 
 
 
-void operacionesRCPSR(){
-     int m,m5;
+void operacionesRSPCR(){
+    int m,m5;
     do{
-        printf("1 For/n2 While/n3 Do-While");
+        system("cls");
+        printf("1 For\n2 While\n3 Do-While\n4 Salir");
         scanf("%d",&m);
         switch(m){
             case 1:
                 do{
-                    printf("1 Cuadro/n2 While/n3 Salir");
-                    scanf("%d",&m);
-                    switch(m){
+                    printf("1 Cuadro\n2 \n3 Salir\n");
+                    scanf("%d",&m5);
+                    switch(m5){
                         case 1:
+                            if(cuadroFRSPCR())
+                                printf("\n\n\n");
                         break;
                         case 2:
                         break;
@@ -1242,13 +1604,47 @@ void operacionesRCPSR(){
                 }while(m5!=3);
             break;
             case 2:
+                do{
+                    printf("1 Cuadro\n2 \n3 Salir");
+                    scanf("%d",&m5);
+                    switch(m5){
+                        case 1:
+                            if(cuadroWRSPCR())
+                                printf("\n\n\n");
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                            printf("Incorrecto/n");
+                    }
+                }while(m5!=3);
             break;
             case 3:
+                do{
+                    printf("1 Cuadro\n2 While\n3 Salir");
+                    scanf("%d",&m5);
+                    switch(m5){
+                        case 1:
+                            if(cuadroDWRSPCR())
+                                printf("\n\n\n");
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                            printf("Incorrecto/n");
+                    }
+                }while(m5!=3);
+            break;
+            case  4:
             break;
             default:
                 printf("Incorrecto/n");
         }
-    }while(m!=3);
+    }while(m!=4);
 }
 /***Fin**/
 
@@ -1257,25 +1653,182 @@ void operacionesRCPSR(){
 
 /***RCPCR**/
     /***FOR**/
-        void cuadroFRCPCR();
+        int cuadroFRCPCR(int tam){
+           HANDLE hCon;
+            hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD dwPos;
+            dwPos.Y = 0;
+            int i,j, k,l,m ,r;
+            system("cls");
+
+                for(i=1;i<tam;i++){
+                    for(j=1;j<=tam-1;j++){
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    for(j=1;j<=tam-1;j++){
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    for(j=tam-1;j>0;j--){
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+
+                    for(j=tam-1;j>0;j--){
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                    }
+                    tam--;
+
+                }
+
+            return(1);
+        }
     /***While**/
-        void cuadroWRCPCR();
+        int cuadroWRCPCR(int tam){
+         HANDLE hCon;
+            hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD dwPos;
+            dwPos.Y = 0;
+            int i,j, k,l,m ,r;
+
+                system("cls");
+
+                i=1;
+                    while(i<tam){
+                        j=1;
+                        while(j<=tam-1){
+                            dwPos.X = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j++;
+                        }
+                        j=1;
+                        while(j<=tam-1){
+                            dwPos.Y = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j++;
+                        }
+                        j=tam-1;
+                        while(j>0){
+                            if(j<i){
+                                break;
+                            }
+                            dwPos.X = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j--;
+                        }
+                        j=tam-1;
+                        while(j>0){
+                            if(j<i){
+                                break;
+                            }
+                            dwPos.Y = j;
+                            delay(1);
+                            SetConsoleCursorPosition(hCon,dwPos);
+                            printf("*");
+                            j--;
+                        }
+                        tam--;
+                        i++;
+                    }
+
+                return(1);
+                }
     /***Do-While**/
-        void cuadroDWRCPCR();
+        int cuadroDWRCPCR(int tam){
+        HANDLE hCon;
+        hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+        COORD dwPos;
+        dwPos.Y = 0;
+        int i,j, k,l,m ,r;
+
+            system("cls");
+
+            i=1;
+                do{
+                    j=1;
+                    do{
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j++;
+                    }while(j<=tam-1);
+                    j=1;
+                    do{
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j++;
+                    }while(j<=tam-1);
+                    j=tam-1;
+                    do{
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.X = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j--;
+                    }while(j>0);
+                    j=tam-1;
+                    do{
+                        if(j<i){
+                            break;
+                        }
+                        dwPos.Y = j;
+                        delay(1);
+                        SetConsoleCursorPosition(hCon,dwPos);
+                        printf("*");
+                        j--;
+                    }while(j>0);
+                    tam--;
+                    i++;
+                }while(i<tam);
+                return(1);
+        }
 
 
 void operacionesRCPCR(){
- int m,m5;
+ int m,m5,tam;
     do{
-        printf("1 For/n2 While/n3 Do-While");
+        system("cls");
+        printf("1 For\n2 While\n3 Do-While\n4 Salir");
         scanf("%d",&m);
         switch(m){
             case 1:
                 do{
-                    printf("1 Cuadro/n2 While/n3 Salir");
-                    scanf("%d",&m);
-                    switch(m){
+                    printf("1 Cuadro\n2 \n3 Salir\n");
+                    scanf("%d",&m5);
+                    switch(m5){
                         case 1:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            if(cuadroFRCPCR(tam))
+                                printf("\n\n\n");
                         break;
                         case 2:
                         break;
@@ -1287,13 +1840,51 @@ void operacionesRCPCR(){
                 }while(m5!=3);
             break;
             case 2:
+                do{
+                    printf("1 Cuadro\n2 \n3 Salir");
+                    scanf("%d",&m5);
+                    switch(m5){
+                        case 1:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            if(cuadroWRCPCR(tam))
+                                printf("\n\n\n");
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                            printf("Incorrecto/n");
+                    }
+                }while(m5!=3);
             break;
             case 3:
+                do{
+                    printf("1 Cuadro\n2 While\n3 Salir");
+                    scanf("%d",&m5);
+                    switch(m5){
+                        case 1:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            if(cuadroDWRCPCR(tam))
+                                printf("\n\n\n");
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                        break;
+                        default:
+                            printf("Incorrecto/n");
+                    }
+                }while(m5!=3);
+            break;
+            case  4:
             break;
             default:
                 printf("Incorrecto/n");
         }
-    }while(m!=3);
+    }while(m!=4);
 }
 /***Fin**/
 
