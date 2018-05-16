@@ -91,16 +91,20 @@ void subMenu3(){
 void subMenu4(){
     int m1;
     do{
-        printf("1 SPSR\2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
         scanf("%d",&m1);
         switch(m1){
             case 1:
+                operacionesARSPSR();
             break;
             case 2:
+                operacionesARSPCR();
             break;
             case 3:
+                operacionesARCPSR();
             break;
             case 4:
+                operacionesARCPCR();
             break;
             case 5:
             break;
@@ -113,16 +117,20 @@ void subMenu4(){
 void subMenu5(){
     int m1;
     do{
-        printf("1 SPSR\2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
         scanf("%d",&m1);
         switch(m1){
             case 1:
+                operacionesRRSPSR();
             break;
             case 2:
+                operacionesRRSPCR();
             break;
             case 3:
+                operacionesRRCPSR();
             break;
             case 4:
+                operacionesRRCPCR();
             break;
             case 5:
             break;
@@ -238,6 +246,17 @@ void operacionesRSPSR();
 
     /***Do-While**/
     void cuadroDWRSPSR();
+
+
+    /***For**/
+    void felchaFRSPSR();
+
+    /***While**/
+    void flechaWRSPSR();
+
+    /***Do-While**/
+    void flechaDWRSPSR();
+
 /***Fin**/
 
 
@@ -259,6 +278,15 @@ void operacionesRSPCR();
     int cuadroDWRSPCR();
     /***Fin**/
 
+    /***For**/
+    int flechaFRSPCR();
+
+    /***While**/
+    int flechaWRSPCR();
+
+    /***Do-While**/
+    int flechaDWRSPCR();
+
 /***Fin**/
 
 /***RCPSR**/
@@ -275,6 +303,17 @@ void operacionesRCPSR();
     /***Do-While**/
     void cuadroDWRCPSR();
     /***Fin**/
+
+
+    /***For**/
+    void flechaFRCPSR();
+
+    /***While**/
+    void flechaWRCPSR();
+
+    /***Do-While**/
+    void flechaDWRCPSR();
+
 
 /***fIN**/
 
@@ -293,10 +332,171 @@ void operacionesRCPCR();
     int cuadroDWRCPCR();
     /***Fin**/
 
+
+
+    /***For**/
+    int flechaFRCPCR();
+
+    /***While**/
+    int flechaWRCPCR();
+
+    /***Do-While**/
+    int flechaDWRCPCR();
+
+
 /***Fin**/
 
 /***FIN**/
 
+
+
+/***SubMenu 4**/
+
+/***ARSPSR**/
+    /***For**/
+        void sumaArreglosFARSPSR();
+    /***While**/
+        void sumaArreglosWARSPSR();
+    /***Do-While**/
+        void sumaArreglosDWARSPSR();
+
+    /***For**/
+        void sumaParesImparesFARSPSR();
+    /***While**/
+        void sumaParesImparesWARSPSR();
+    /***Do-While**/
+        void sumaParesImparesDWARSPSR();
+    void operacionesARSPSR();
+/***Fin**/
+
+/***ARSPCR**/
+    /***For**/
+        int sumaArreglosFARSPCR();
+    /***While**/
+        int sumaArreglosWARSPCR();
+    /***Do-While**/
+        int sumaArreglosDWARSPCR();
+
+    /***For**/
+        int sumaParesImparesFARSPCR();
+    /***While**/
+        int sumaParesImparesWARSPCR();
+    /***Do-While**/
+        int sumaParesImparesDWARSPCR();
+    void operacionesARSPCR();
+/***Fin**/
+
+/***ARCPSR**/
+    /***For**/
+        void sumaArreglosFARCPSR();
+    /***While**/
+        void sumaArreglosWARCPSR();
+    /***Do-While**/
+        void sumaArreglosDWARCPSR();
+
+    /***For**/
+        void sumaParesImparesFARCPSR();
+    /***While**/
+        void sumaParesImparesWARCPSR();
+    /***Do-While**/
+        void sumaParesImparesDWARCPSR();
+    void operacionesARCPSR();
+/***Fin**/
+
+/***ARCPCR**/
+    /***For**/
+        int sumaArreglosFARCPCR();
+    /***While**/
+        int sumaArreglosWARCPCR();
+    /***Do-While**/
+        int sumaArreglosDWARCPCR();
+
+    /***For**/
+        int sumaParesImparesFARCPCR();
+    /***While**/
+        int sumaParesImparesWARCPCR();
+    /***Do-While**/
+        int sumaParesImparesDWARCPCR();
+    void operacionesARCPCR();
+/***Fin**/
+
+
+/***Fin**/
+
+
+
+
+/***SubMenu 5**/
+
+/***ARSPSR**/
+    /***For**/
+        void oneFARSPSR();
+    /***While**/
+        void oneWARSPSR();
+    /***Do-While**/
+        void oneDWARSPSR();
+    /***For**/
+        void arrayFARSPSR();
+    /***While**/
+        void arrayWARSPSR();
+    /***Do-While**/
+        void arrayDWARSPSR();
+
+    void operacionesRRSPSR();
+/***Fin**/
+
+/***ARSPCR**/
+    /***For**/
+        int oneFARSPCR();
+    /***While**/
+        int oneWARSPCR();
+    /***Do-While**/
+        int oneDWARSPCR();
+    /***For**/
+        int arrayFARSPCR();
+    /***While**/
+        int arrayWARSPCR();
+    /***Do-While**/
+        int arrayDWARSPCR();
+
+    void operacionesRRSPCR();
+/***Fin**/
+
+/***ARCPSR**/
+        void oneFARCPSR(float);
+    /***While**/
+        void oneWARCPSR(float);
+    /***Do-While**/
+        void oneDWARCPSR(float);
+    /***For**/
+        void arrayFARCPSR();
+    /***While**/
+        void arrayWARCPSR();
+    /***Do-While**/
+        void arrayDWARCPSR();
+
+    void operacionesRRCPSR();
+/***Fin**/
+
+/***ARCPCR**/
+
+    /***For**/
+        int oneFARCPCR(float);
+    /***While**/
+        int oneWARCPCR(float);
+    /***Do-While**/
+        int oneDWARCPCR(float);
+    /***For**/
+        int arrayFARCPCR();
+    /***While**/
+        int arrayWARCPCR();
+    /***Do-While**/
+        int arrayDWARCPCR();
+    void operacionesRRCPCR();
+/***Fin**/
+
+
+/***Fin**/
 
 main(){
     int m1;
@@ -319,6 +519,7 @@ main(){
                 subMenu4();
             break;
             case 5:
+                subMenu5();
             break;
             case 6:
             break;
@@ -904,14 +1105,497 @@ void operacionesCPCR(){
 
 
 /***SubMenu2**/
+
+/***ASPSR**/
+
+
+/***Simples**/
+    void simplesAbecedarioSPSR(){
+        int m, w, m5;
+        char a ='a';
+        printf("1 Ascendente o 2 Descendente\n");
+        scanf("%d",&m5);
+        if(m5 == 1){
+            for(a; a<='z'; a++){
+                printf("%c ",a);
+            }
+        }if(m5!=1){
+            for(a='z'; a>='a'; a--){
+                printf("%c ",a);
+            }
+        }
+    }
+/***Dobles**/
+    void doblesAbecedarioSPSR(){
+        if(m5 == 1){
+                    for(a; a<='z'; a++){
+                        printf("%c ",a);
+                    }
+                }else{
+                    for(a='z'; a>='a'; a--){
+                        printf("%c ",a);
+                    }
+                }
+    }
+/***Multiples**/
+    void doblesMesSPSR(){
+        int mes;
+        printf("Por favor introdusca el numero del mes \n");
+        scanf("%d",&mes);
+
+        switch(mes){
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                printf("Tu mes tiene 31 dias");
+                break;
+
+            case 2:
+                printf("Tu mes tiene 28 dias");
+                break;
+            case 4 : case 6: case 9: case 11:
+                printf("Tu mes tiene 30 dias");
+                break;
+
+
+            default:
+                printf("Mes no encontrado");
+
+        }
+    }
+    void doblesteclasSPSR(){
+        char letra;
+        printf("TECLEA UNA TECLA\n");
+        scanf("%c",&letra);
+        switch(letra)
+        {
+        case 'a': case 'e': case 'i': case 'o': case 'u':
+        case 'A': case 'E': case 'I': case 'O': case 'U':
+            printf("VOCAL"); break;
+        case 'b': case 'c': case 'd': case 'f': case 'g': case 'h':
+        case 'j': case 'k': case 'l': case 'm':
+        case 'n': case 'p': case 'q': case 'r': case 's':
+        case 't': case 'w': case 'x': case 'y': case 'z':
+        case 'B': case 'C': case 'D': case 'F': case 'G':
+        case 'H': case 'J': case 'K': case 'L': case 'M': case 'N':
+        case 'P': case 'Q': case 'R': case 'S': case 'T':
+        case 'W': case 'X': case 'Y': case 'Z':
+            printf("CONSONANTE"); break;
+        case '1': case '2': case '3': case '4': case '5':
+        case '6': case '7': case '8': case '9': case '0':
+            printf("DIGITO");break;
+        default:
+            printf("CARACTER");
+
+        }
+    }
+
 void operacionesASPSR(){
+    int m,m5;
+        do{
+            system("cls");
+            printf("1 Simples\n2 Dobles\n3 Multiples\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Abecedario\n2  \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                simplesAbecedarioSPSR();
+                            break;
+                            case 2:
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Abecedario\n2 \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                doblesAbecedarioSPSR();
+                            break;
+                            case 2:
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Mes\n2 Teclas \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                doblesMesSPSR();
+                            break;
+                            case 2:
+                                doblesteclasSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
 }
+
+/***Fin**/
+
+
+/***ASPCR**/
+/***Simples**/
+    int simplesAbecedarioSPCR(){
+        int m, w, m5;
+        char a ='a';
+        printf("1 Ascendente o 2 Descendente\n");
+        scanf("%d",&m5);
+        if(m5 == 1){
+            for(a; a<='z'; a++){
+                printf("%c ",a);
+            }
+        }if(m5!=1){
+            for(a='z'; a>='a'; a--){
+                printf("%c ",a);
+            }
+        }
+        return(1);
+    }
+/***Dobles**/
+    int doblesAbecedarioSPCR(){
+        if(m5 == 1){
+                    for(a; a<='z'; a++){
+                        printf("%c ",a);
+                    }
+                }else{
+                    for(a='z'; a>='a'; a--){
+                        printf("%c ",a);
+                    }
+                }
+                return(1);
+    }
+/***Multiples**/
+    int MultiplessMesSPCR(){
+        int mes;
+        printf("Por favor introdusca el numero del mes \n");
+        scanf("%d",&mes);
+
+        switch(mes){
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                printf("Tu mes tiene 31 dias");
+                break;
+
+            case 2:
+                printf("Tu mes tiene 28 dias");
+                break;
+            case 4 : case 6: case 9: case 11:
+                printf("Tu mes tiene 30 dias");
+                break;
+
+
+            default:
+                printf("Mes no encontrado");
+
+        }
+        return(1);
+    }
+    int MultiplesteclasSPCR(){
+        char letra;
+        printf("TECLEA UNA TECLA\n");
+        scanf("%c",&letra);
+        switch(letra)
+        {
+        case 'a': case 'e': case 'i': case 'o': case 'u':
+        case 'A': case 'E': case 'I': case 'O': case 'U':
+            printf("VOCAL"); break;
+        case 'b': case 'c': case 'd': case 'f': case 'g': case 'h':
+        case 'j': case 'k': case 'l': case 'm':
+        case 'n': case 'p': case 'q': case 'r': case 's':
+        case 't': case 'w': case 'x': case 'y': case 'z':
+        case 'B': case 'C': case 'D': case 'F': case 'G':
+        case 'H': case 'J': case 'K': case 'L': case 'M': case 'N':
+        case 'P': case 'Q': case 'R': case 'S': case 'T':
+        case 'W': case 'X': case 'Y': case 'Z':
+            printf("CONSONANTE"); break;
+        case '1': case '2': case '3': case '4': case '5':
+        case '6': case '7': case '8': case '9': case '0':
+            printf("DIGITO");break;
+        default:
+            printf("CARACTER");
+
+        }
+        return(1);
+    }
+
+
+
+
 void operacionesASPCR(){
+        int m,m5;
+        do{
+            system("cls");
+            printf("1 Simples\n2 Dobles\n3 Multiples\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Abecedario\n2  \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(simplesAbecedarioSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Abecedario\n2 \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(doblesAbecedarioSPSCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Mes\n2 Teclas \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(MultiplessMesSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(MultiplesteclasSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
 }
+/***Fin**/
+
+
+
+
+
+/***ACPSR**/
+
+    void simplesAbecedarioCPSR(int m5){
+        int m, w;
+        char a ='a';
+        if(m5 == 1){
+            for(a; a<='z'; a++){
+                printf("%c ",a);
+            }
+        }if(m5!=1){
+            for(a='z'; a>='a'; a--){
+                printf("%c ",a);
+            }
+        }
+    }
+/***Dobles**/
+    void doblesAbecedarioCPSR(){
+        if(m5 == 1){
+                    for(a; a<='z'; a++){
+                        printf("%c ",a);
+                    }
+                }else{
+                    for(a='z'; a>='a'; a--){
+                        printf("%c ",a);
+                    }
+                }
+    }
+/***Multiples**/
+    void MultiplesMesCPSR(int mes){
+
+
+        switch(mes){
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                printf("Tu mes tiene 31 dias");
+                break;
+
+            case 2:
+                printf("Tu mes tiene 28 dias");
+                break;
+            case 4 : case 6: case 9: case 11:
+                printf("Tu mes tiene 30 dias");
+                break;
+
+
+            default:
+                printf("Mes no encontrado");
+
+        }
+    }
+    void MultiplesteclasCPSR(char letra){
+        switch(letra)
+        {
+        case 'a': case 'e': case 'i': case 'o': case 'u':
+        case 'A': case 'E': case 'I': case 'O': case 'U':
+            printf("VOCAL"); break;
+        case 'b': case 'c': case 'd': case 'f': case 'g': case 'h':
+        case 'j': case 'k': case 'l': case 'm':
+        case 'n': case 'p': case 'q': case 'r': case 's':
+        case 't': case 'w': case 'x': case 'y': case 'z':
+        case 'B': case 'C': case 'D': case 'F': case 'G':
+        case 'H': case 'J': case 'K': case 'L': case 'M': case 'N':
+        case 'P': case 'Q': case 'R': case 'S': case 'T':
+        case 'W': case 'X': case 'Y': case 'Z':
+            printf("CONSONANTE"); break;
+        case '1': case '2': case '3': case '4': case '5':
+        case '6': case '7': case '8': case '9': case '0':
+            printf("DIGITO");break;
+        default:
+            printf("CARACTER");
+
+        }
+    }
+
+
 void operacionesACPSR(){
+        int m,m5,mes;
+        do{
+            system("cls");
+            printf("1 Simples\n2 Dobles\n3 Multiples\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Abecedario\n2  \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("1 Ascendente o 2 Descendente\n");
+                                scanf("%d",&m5);
+                                simplesAbecedarioCPSR(m5);
+                            break;
+                            case 2:
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Abecedario\n2 \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("1 Ascendente o 2 Descendente\n");
+                                scanf("%d",&m5);
+                                doblesAbecedarioCPSR();
+
+                            break;
+                            case 2:
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Mes\n2 Teclas \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Por favor introdusca el numero del mes \n");
+                                scanf("%d",&mes);
+                                MultiplesMesCPSR(mes);
+
+                            break;
+                            case 2:
+                                printf("TECLEA UNA TECLA\n");
+                                scanf("%c",&letra);
+                                MultiplesteclasCPSR();
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
 }
+
+/***Fin**/
+
+
+
+
+
+/***ACPCR**/
+/***Simples**/
+
+/***Dobles**/
+
+/***Multiples**/
+
+
+
+
 void operacionesACPCR(){
 }
+
+/***Fin**/
 
 /***FIN**/
 
@@ -1093,7 +1777,164 @@ void operacionesACPCR(){
                 }while(i<tam);
         }
 
+    /***For**/
+        void flechaFRSPSR(){
+            int m,i,j,k,c,e,t;
+            printf("Introdusca su Tamaño\n");
+            scanf("%d",&t);
 
+            printf("\toperacion realizada con el ciclo For\n");
+                c=t+1;
+                e=t;
+                for(i=0; i<=t;i++){
+
+                //for espacio antes
+                    if(c != 0){
+                        for(k=0;k<=e;k++){
+                            printf("%c",32);
+                        }
+                    }
+
+                    //for espacio entre
+                    for(j=1; j<=i; j++){
+                        printf("%c",32);
+                        printf("*");
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                }
+
+
+                //for despues
+                e=0;
+
+                for(i=0; i<=2;i++){
+                    for(k=0;k<=t-1;k++){
+                        printf("%c",32);
+                    }
+                //for espacio entre
+                    for(j=1; j<=2; j++){
+                        printf("*");
+                        printf("%c",32);
+                    }
+                    printf("\n");
+                }
+        }
+    /***While**/
+        void flechaWRSPSR(){
+            int m,i,j,k,c,e,t;
+            printf("Introdusca su Tamaño\n");
+            scanf("%d",&t);
+
+            printf("\toperacion realizada con el ciclo While\n");
+                c=t+1;
+                e=t;
+                i=0;
+                while(i<=t){
+
+                //for espacio antes
+                    if(c != 0){
+                        k=0;
+                        while(k<=e){
+                            printf("%c",32);
+                            k++;
+                        }
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    while(j<=i){
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }
+
+
+                //for despues
+                e=0;
+                i=0;
+                while(i<=2){
+                    k=0;
+                    while(k<=t-1){
+                        printf("%c",32);
+                        k++;
+                    }
+                //for espacio entre
+                    j=1;
+                    while(j<=2){
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }
+                    printf("\n");
+                    i++;
+                }
+
+        }
+    /***Do-While**/
+        void flechaDWRSPSR(){
+            int m,i,j,k,c,e,t;
+            printf("Introdusca su Tamaño\n");
+            scanf("%d",&t);
+            printf("\toperacion realizada con el ciclo Do-While\n");
+
+                c=t+1;
+                e=t;
+                i=1;
+                do{
+
+                //for espacio antes
+                    if(c != 0){
+                        k=1;
+                        do{
+                            printf("%c",32);
+                            k++;
+                        }while(k<=e);
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    do{
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }while(j<=i);
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }while(i<=t);
+
+
+                //for despues
+                e=0;
+                i=0;
+               do{
+                    k=0;
+                    do{
+                        printf("%c",32);
+                        k++;
+                    }while(k<=t-1);
+                //for espacio entre
+                    j=1;
+                    do{
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }while(j<=2);
+                    printf("\n");
+                    i++;
+                } while(i<=2);
+        }
 
 void operacionesRSPSR(){
     int m,m5;
@@ -1104,13 +1945,14 @@ void operacionesRSPSR(){
         switch(m){
             case 1:
                 do{
-                    printf("1 Cuadro\n2 \n3 Salir\n");
+                    printf("1 Cuadro\n2 Flecha \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
                         case 1:
                             cuadroFRSPSR();
                         break;
                         case 2:
+                            flechaFRSPSR();
                         break;
                         case 3:
                         break;
@@ -1121,13 +1963,14 @@ void operacionesRSPSR(){
             break;
             case 2:
                 do{
-                    printf("1 Cuadro\n2 \n3 Salir");
+                    printf("1 Cuadro\n2 Flecha \n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
                         case 1:
                             cuadroWRSPSR();
                         break;
                         case 2:
+                            flechaWRSPSR();
                         break;
                         case 3:
                         break;
@@ -1138,13 +1981,14 @@ void operacionesRSPSR(){
             break;
             case 3:
                 do{
-                    printf("1 Cuadro\n2 While\n3 Salir");
+                    printf("1 Cuadro\n2 Flecha\n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
                         case 1:
                             cuadroDWRSPSR();
                         break;
                         case 2:
+                            flechaDWRSPSR();
                         break;
                         case 3:
                         break;
@@ -1327,6 +2171,154 @@ void operacionesRSPSR(){
                 }while(i<tam);
         }
 
+    /***For**/
+        void flechaFRCPSR(int t){
+            int m,i,j,k,c,e;
+                printf("\toperacion realizada con el ciclo For\n");
+                c=t+1;
+                e=t;
+                for(i=0; i<=t;i++){
+
+                //for espacio antes
+                    if(c != 0){
+                        for(k=0;k<=e;k++){
+                            printf("%c",32);
+                        }
+                    }
+
+                    //for espacio entre
+                    for(j=1; j<=i; j++){
+                        printf("%c",32);
+                        printf("*");
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                }
+
+
+                //for despues
+                e=0;
+
+                for(i=0; i<=2;i++){
+                    for(k=0;k<=t-1;k++){
+                        printf("%c",32);
+                    }
+                //for espacio entre
+                    for(j=1; j<=2; j++){
+                        printf("*");
+                        printf("%c",32);
+                    }
+                    printf("\n");
+                }
+        }
+    /***While**/
+        void flechaWRCPSR(int t){
+            int m,i,j,k,c,e;
+                printf("\toperacion realizada con el ciclo While\n");
+                c=t+1;
+                e=t;
+                i=0;
+                while(i<=t){
+
+                //for espacio antes
+                    if(c != 0){
+                        k=0;
+                        while(k<=e){
+                            printf("%c",32);
+                            k++;
+                        }
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    while(j<=i){
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }
+
+
+                //for despues
+                e=0;
+                i=0;
+                while(i<=2){
+                    k=0;
+                    while(k<=t-1){
+                        printf("%c",32);
+                        k++;
+                    }
+                //for espacio entre
+                    j=1;
+                    while(j<=2){
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }
+                    printf("\n");
+                    i++;
+                }
+        }
+    /***Do-While**/
+        void flechaDWRCPSR(int t){
+            int m,i,j,k,c,e;
+                printf("\toperacion realizada con el ciclo Do-While\n");
+                c=t+1;
+                e=t;
+                i=1;
+                do{
+
+                //for espacio antes
+                    if(c != 0){
+                        k=1;
+                        do{
+                            printf("%c",32);
+                            k++;
+                        }while(k<=e);
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    do{
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }while(j<=i);
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }while(i<=t);
+
+
+                //for despues
+                e=0;
+                i=0;
+               do{
+                    k=0;
+                    do{
+                        printf("%c",32);
+                        k++;
+                    }while(k<=t-1);
+                //for espacio entre
+                    j=1;
+                    do{
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }while(j<=2);
+                    printf("\n");
+                    i++;
+                } while(i<=2);
+        }
 
 
     void operacionesRCPSR(){
@@ -1338,7 +2330,7 @@ void operacionesRSPSR(){
         switch(m){
             case 1:
                 do{
-                    printf("1 Cuadro\n2 \n3 Salir\n");
+                    printf("1 Cuadro\n2 Flecha \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
                         case 1:
@@ -1347,6 +2339,9 @@ void operacionesRSPSR(){
                             cuadroFRCPSR(tam);
                         break;
                         case 2:
+                            printf("Introdusca su Tamaño\n");
+                            scanf("%d",&tam);
+                            flechaFRCPSR(tam);
                         break;
                         case 3:
                         break;
@@ -1366,6 +2361,9 @@ void operacionesRSPSR(){
                             cuadroWRCPSR(tam);
                         break;
                         case 2:
+                            printf("Introdusca su Tamaño\n");
+                            scanf("%d",&tam);
+                            flechaWRCPSR(tam);
                         break;
                         case 3:
                         break;
@@ -1385,6 +2383,9 @@ void operacionesRSPSR(){
                             cuadroDWRCPSR(tam);
                         break;
                         case 2:
+                            printf("Introdusca su Tamaño\n");
+                            scanf("%d",&tam);
+                            flechaDWRCPSR(tam);
                         break;
                         case 3:
                         break;
@@ -1576,7 +2577,166 @@ void operacionesRSPSR(){
             return(1);
         }
 
+    /***For**/
+        int flechaFRSPCR(){
+            int m,i,j,k,c,e,t;
+            printf("Introdusca su Tamaño\n");
+            scanf("%d",&t);
 
+            printf("\toperacion realizada con el ciclo For\n");
+                c=t+1;
+                e=t;
+                for(i=0; i<=t;i++){
+
+                //for espacio antes
+                    if(c != 0){
+                        for(k=0;k<=e;k++){
+                            printf("%c",32);
+                        }
+                    }
+
+                    //for espacio entre
+                    for(j=1; j<=i; j++){
+                        printf("%c",32);
+                        printf("*");
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                }
+
+
+                //for despues
+                e=0;
+
+                for(i=0; i<=2;i++){
+                    for(k=0;k<=t-1;k++){
+                        printf("%c",32);
+                    }
+                //for espacio entre
+                    for(j=1; j<=2; j++){
+                        printf("*");
+                        printf("%c",32);
+                    }
+                    printf("\n");
+                }
+                return(1);
+        }
+    /***While**/
+        int flechaWRSPCR(){
+            int m,i,j,k,c,e,t;
+            printf("Introdusca su Tamaño\n");
+            scanf("%d",&t);
+
+            printf("\toperacion realizada con el ciclo While\n");
+                c=t+1;
+                e=t;
+                i=0;
+                while(i<=t){
+
+                //for espacio antes
+                    if(c != 0){
+                        k=0;
+                        while(k<=e){
+                            printf("%c",32);
+                            k++;
+                        }
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    while(j<=i){
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }
+
+
+                //for despues
+                e=0;
+                i=0;
+                while(i<=2){
+                    k=0;
+                    while(k<=t-1){
+                        printf("%c",32);
+                        k++;
+                    }
+                //for espacio entre
+                    j=1;
+                    while(j<=2){
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }
+                    printf("\n");
+                    i++;
+                }
+                return(1);
+        }
+    /***Do-While**/
+        int flechaDWRSPCR(){
+            int m,i,j,k,c,e,t;
+            printf("Introdusca su Tamaño\n");
+            scanf("%d",&t);
+            printf("\toperacion realizada con el ciclo Do-While\n");
+
+                c=t+1;
+                e=t;
+                i=1;
+                do{
+
+                //for espacio antes
+                    if(c != 0){
+                        k=1;
+                        do{
+                            printf("%c",32);
+                            k++;
+                        }while(k<=e);
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    do{
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }while(j<=i);
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }while(i<=t);
+
+
+                //for despues
+                e=0;
+                i=0;
+               do{
+                    k=0;
+                    do{
+                        printf("%c",32);
+                        k++;
+                    }while(k<=t-1);
+                //for espacio entre
+                    j=1;
+                    do{
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }while(j<=2);
+                    printf("\n");
+                    i++;
+                } while(i<=2);
+                return(1);
+        }
 
 void operacionesRSPCR(){
     int m,m5;
@@ -1595,6 +2755,8 @@ void operacionesRSPCR(){
                                 printf("\n\n\n");
                         break;
                         case 2:
+                            if(flechaFRSPCR())
+                                 printf("\n\n\n");
                         break;
                         case 3:
                         break;
@@ -1613,6 +2775,8 @@ void operacionesRSPCR(){
                                 printf("\n\n\n");
                         break;
                         case 2:
+                            if(flechaWRSPCR())
+                                 printf("\n\n\n");
                         break;
                         case 3:
                         break;
@@ -1631,6 +2795,8 @@ void operacionesRSPCR(){
                                 printf("\n\n\n");
                         break;
                         case 2:
+                            if(flechaDWRSPCR())
+                                 printf("\n\n\n");
                         break;
                         case 3:
                         break;
@@ -1811,6 +2977,163 @@ void operacionesRSPCR(){
                 return(1);
         }
 
+    /***For**/
+        int flechaFRCPCR(int t){
+            int m,i,j,k,c,e;
+
+
+            printf("\toperacion realizada con el ciclo For\n");
+                c=t+1;
+                e=t;
+                for(i=0; i<=t;i++){
+
+                //for espacio antes
+                    if(c != 0){
+                        for(k=0;k<=e;k++){
+                            printf("%c",32);
+                        }
+                    }
+
+                    //for espacio entre
+                    for(j=1; j<=i; j++){
+                        printf("%c",32);
+                        printf("*");
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                }
+
+
+                //for despues
+                e=0;
+
+                for(i=0; i<=2;i++){
+                    for(k=0;k<=t-1;k++){
+                        printf("%c",32);
+                    }
+                //for espacio entre
+                    for(j=1; j<=2; j++){
+                        printf("*");
+                        printf("%c",32);
+                    }
+                    printf("\n");
+                }
+                return(1);
+        }
+    /***While**/
+        int flechaWRCPCR(int t){
+            int m,i,j,k,c,e;
+
+
+            printf("\toperacion realizada con el ciclo While\n");
+                c=t+1;
+                e=t;
+                i=0;
+                while(i<=t){
+
+                //for espacio antes
+                    if(c != 0){
+                        k=0;
+                        while(k<=e){
+                            printf("%c",32);
+                            k++;
+                        }
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    while(j<=i){
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }
+
+
+                //for despues
+                e=0;
+                i=0;
+                while(i<=2){
+                    k=0;
+                    while(k<=t-1){
+                        printf("%c",32);
+                        k++;
+                    }
+                //for espacio entre
+                    j=1;
+                    while(j<=2){
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }
+                    printf("\n");
+                    i++;
+                }
+                return(1);
+        }
+    /***Do-While**/
+        int flechaDWRCPCR(int t){
+            int m,i,j,k,c,e;
+            printf("\toperacion realizada con el ciclo Do-While\n");
+
+                c=t+1;
+                e=t;
+                i=1;
+                do{
+
+                //for espacio antes
+                    if(c != 0){
+                        k=1;
+                        do{
+                            printf("%c",32);
+                            k++;
+                        }while(k<=e);
+                    }
+
+                    //for espacio entre
+                    j=1;
+                    do{
+                        printf("%c",32);
+                        printf("*");
+                        j++;
+                    }while(j<=i);
+                            c--;
+                            e--;
+
+                    printf("\n");
+                    i++;
+                }while(i<=t);
+
+
+                //for despues
+                e=0;
+                i=0;
+               do{
+                    k=0;
+                    do{
+                        printf("%c",32);
+                        k++;
+                    }while(k<=t-1);
+                //for espacio entre
+                    j=1;
+                    do{
+                        printf("*");
+                        printf("%c",32);
+                        j++;
+                    }while(j<=2);
+                    printf("\n");
+                    i++;
+                } while(i<=2);
+                return(1);
+        }
+
 
 void operacionesRCPCR(){
  int m,m5,tam;
@@ -1821,7 +3144,7 @@ void operacionesRCPCR(){
         switch(m){
             case 1:
                 do{
-                    printf("1 Cuadro\n2 \n3 Salir\n");
+                    printf("1 Cuadro\n2 Flecha \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
                         case 1:
@@ -1831,6 +3154,10 @@ void operacionesRCPCR(){
                                 printf("\n\n\n");
                         break;
                         case 2:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            if(flechaFRCPCR(tam))
+                                printf("\n\n\n");
                         break;
                         case 3:
                         break;
@@ -1851,6 +3178,10 @@ void operacionesRCPCR(){
                                 printf("\n\n\n");
                         break;
                         case 2:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            if(flechaWRCPCR(tam))
+                                printf("\n\n\n");
                         break;
                         case 3:
                         break;
@@ -1871,6 +3202,10 @@ void operacionesRCPCR(){
                                 printf("\n\n\n");
                         break;
                         case 2:
+                            printf("Introdusca su Base\n");
+                            scanf("%d",&tam);
+                            if(flechaDWRCPCR(tam))
+                                printf("\n\n\n");
                         break;
                         case 3:
                         break;
@@ -1889,3 +3224,2466 @@ void operacionesRCPCR(){
 /***Fin**/
 
 /***FIN**/
+
+
+
+/***SubMenu 4**/
+
+
+/***ARSPSR**/
+    /***For**/
+        void sumaArreglosFARSPSR(){
+            int tam=100;
+            int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+            }
+
+            for(i=0;i<t;i++){
+                lista3[i] = lista[i] + lista2[i];
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            for(i=0;i<t;i++){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+            }
+        }
+    /***While**/
+        void sumaArreglosWARSPSR(){
+            int tam=100;
+            int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            while(i<t){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }
+        }
+    /***Do-While**/
+        void sumaArreglosDWARSPSR(){
+            int tam=100;
+            int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            do{
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }while(i<t);
+        }
+
+    /***For**/
+        void sumaParesImparesFARSPSR(){
+            int tam=100;
+            int t, lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+
+            for(i=0;i<t;i++){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+        }
+    /***While**/
+        void sumaParesImparesWARSPSR(){
+            int tam=100;
+            int t, lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+        }
+    /***Do-While**/
+        void sumaParesImparesDWARSPSR(){
+            int tam=100;
+            int t, lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+        }
+
+    void operacionesARSPSR(){
+        int m,m5;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Suma Arreglos(Bidimensional)\n2 Mostrar(Unidimensional) \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                sumaArreglosFARSPSR();
+                            break;
+                            case 2:
+                                sumaParesImparesFARSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Suma Arreglos (Bidimensional)\n2 Pares E Impares (Unidimensional) \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                sumaArreglosWARSPSR();
+                            break;
+                            case 2:
+                                sumaParesImparesWARSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Suma Arreglos (Bidimensional)\n2 Pares E Impares (Unidimensional) \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                sumaArreglosDWARSPSR();
+                            break;
+                            case 2:
+                                sumaParesImparesDWARSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+
+
+/***ARSPCR**/
+
+    /***For**/
+        int sumaArreglosFARSPCR(){
+            int tam=100;
+            int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+            }
+
+            for(i=0;i<t;i++){
+                lista3[i] = lista[i] + lista2[i];
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            for(i=0;i<t;i++){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+            }
+            return(1);
+        }
+    /***While**/
+        int sumaArreglosWARSPCR(){
+            int tam=100;
+            int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            while(i<t){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }
+            return(1);
+        }
+    /***Do-While**/
+        int sumaArreglosDWARSPCR(){
+            int tam=100;
+            int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            do{
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }while(i<t);
+            return(1);
+        }
+
+    /***For**/
+        int sumaParesImparesFARSPCR(){
+            int tam=100;
+            int t, lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+
+            for(i=0;i<t;i++){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            return(1);
+        }
+    /***While**/
+        int sumaParesImparesWARSPCR(){
+            int tam=100;
+            int t, lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            return(1);
+        }
+    /***Do-While**/
+        int sumaParesImparesDWARSPCR(){
+            int tam=100;
+            int t, lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Por favor ingrese el tamaño de la lista \n");
+            scanf("%d",&t);
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            return(1);
+        }
+
+    void operacionesARSPCR(){
+        int m,m5;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(sumaArreglosFARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(sumaParesImparesFARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(sumaArreglosWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(sumaParesImparesWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(sumaArreglosDWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(sumaParesImparesDWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+
+    }
+/***Fin**/
+
+/***ARCPSR**/
+
+    /***For**/
+        void sumaArreglosFARCPSR(int t){
+            int tam=100;
+            int lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+            }
+
+            for(i=0;i<t;i++){
+                lista3[i] = lista[i] + lista2[i];
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            for(i=0;i<t;i++){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+            }
+        }
+    /***While**/
+        void sumaArreglosWARCPSR(int t){
+            int tam=100;
+            int lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            while(i<t){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }
+        }
+    /***Do-While**/
+        void sumaArreglosDWARCPSR(int t){
+            int tam=100;
+            int lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            do{
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }while(i<t);
+        }
+
+    /***For**/
+        void sumaParesImparesFARCPSR(int t){
+            int tam=100;
+            int lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+
+            for(i=0;i<t;i++){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+        }
+    /***While**/
+        void sumaParesImparesWARCPSR(int t){
+            int tam=100;
+            int lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+        }
+    /***Do-While**/
+        void sumaParesImparesDWARCPSR(int t){
+            int tam=100;
+            int lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+        }
+
+    void operacionesARCPSR(){
+        int m,m5,tam;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                sumaArreglosFARCPSR(tam);
+
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                sumaParesImparesFARCPSR(tam);
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                sumaArreglosWARCPSR(tam);
+
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                sumaParesImparesWARCPSR(tam);
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                sumaArreglosDWARCPSR(tam);
+
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                sumaParesImparesDWARCPSR(tam);
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+/***ARCPCR**/
+    /***For**/
+        int sumaArreglosFARCPCR(int t){
+            int tam=100;
+            int lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+            }
+
+            for(i=0;i<t;i++){
+                lista3[i] = lista[i] + lista2[i];
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            for(i=0;i<t;i++){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+            }
+            return(1);
+        }
+    /***While**/
+        int sumaArreglosWARCPCR(int t){
+                        int tam=100;
+            int lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            while(i<t){
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }
+            return(1);
+        }
+    /***Do-While**/
+        int sumaArreglosDWARCPCR(int t){
+            int tam=100;
+            int lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            system("cls");
+            printf("Ingrese Los Elementos de lista 2\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista2[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+                lista3[i] = lista[i] + lista2[i];
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("Posicion\t Arreglo 1\t Arreglo 2\t Arreglo 3\n");
+            i=0;
+            do{
+                printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
+                i++;
+            }while(i<t);
+            return(1);
+        }
+
+    /***For**/
+        int sumaParesImparesFARCPCR(int t){
+            int tam=100;
+            int lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Ingrese Los Elementos de lista 1\n");
+            for(i=0;i<t;i++){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+            }
+
+            for(i=0;i<t;i++){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            return(1);
+        }
+    /***While**/
+        int sumaParesImparesWARCPCR(int t){
+            int tam=100;
+            int lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            while(i<t){
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }
+            i=0;
+            while(i<t){
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            return(1);
+        }
+    /***Do-While**/
+        int sumaParesImparesDWARCPCR(int t){
+            int tam=100;
+            int lista[tam], m, i, r, par, impar, parC, imparC;
+            parC=0;
+            imparC=0;
+            par=0;
+            impar=0;
+            printf("Ingrese Los Elementos de lista 1\n");
+            i=0;
+            do{
+                printf("Elemento %d ",i+1);
+                scanf("%d",&lista[i]);
+                i++;
+            }while(i<t);
+            i=0;
+            do{
+               if(lista[i] % 2 == 0){
+                    parC++;
+                    par=par+lista[i];
+               }
+               if(lista[i] % 2 == 1){
+                    imparC++;
+                    impar=impar+lista[i];
+               }
+                i++;
+            }while(i<t);
+
+            printf("\n");
+            printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            return(1);
+        }
+
+    void operacionesARCPCR(){
+        int m,m5,tam;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(sumaArreglosFARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(sumaParesImparesFARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(sumaArreglosWARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(sumaParesImparesWARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(sumaArreglosDWARCPCR(tam))
+                                printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(sumaParesImparesDWARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+
+/***Fin**/
+
+
+
+/***SubMenu 5**/
+
+/***ARSPSR**/
+    /***For**/
+        void oneFARSPSR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            scanf("%f",&trabajador.costoHr);
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+        }
+    /***While**/
+        void oneWARSPSR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            scanf("%f",&trabajador.costoHr);
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+        }
+    /***Do-While**/
+        void oneDWARSPSR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            scanf("%f",&trabajador.costoHr);
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+        }
+    /***For**/
+        void arrayFARSPSR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i,num;
+            printf("Usuarios a registrar\n");
+            scanf("%d",&num);
+            for(i=0;i<num;i++){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+            }
+            system("cls");
+            for(i=0;i<num;i++){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+            }
+        }
+    /***While**/
+        void arrayWARSPSR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+                        int i,num;
+            printf("Usuarios a registrar\n");
+            scanf("%d",&num);
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+        }
+    /***Do-While**/
+        void arrayDWARSPSR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i,num;
+            printf("Usuarios a registrar\n");
+            scanf("%d",&num);
+            i=0;
+            do{
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }while(i<num);
+            system("cls");
+            i=0;
+            do{
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }while(i<num);
+        }
+    void operacionesRRSPSR(){
+        int m,m5;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                oneFARSPSR();
+                            break;
+                            case 2:
+                                arrayFARSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                oneWARSPSR();
+                            break;
+                            case 2:
+                                arrayWARSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                oneDWARSPSR();
+                            break;
+                            case 2:
+                                arrayDWARSPSR();
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+/***ARSPCR**/
+    /***For**/
+        int oneFARSPCR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            scanf("%f",&trabajador.costoHr);
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+            return(1);
+        }
+    /***While**/
+        int oneWARSPCR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            scanf("%f",&trabajador.costoHr);
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+            return(1);
+        }
+    /***Do-While**/
+        int oneDWARSPCR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            scanf("%f",&trabajador.costoHr);
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+            return(1);
+        }
+    /***For**/
+        int arrayFARSPCR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i,num;
+            printf("Usuarios a registrar\n");
+            scanf("%d",&num);
+            for(i=0;i<num;i++){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+            }
+            system("cls");
+            for(i=0;i<num;i++){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+            }
+            return(1);
+        }
+    /***While**/
+        int arrayWARSPCR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+                        int i,num;
+            printf("Usuarios a registrar\n");
+            scanf("%d",&num);
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+            return(1);
+        }
+    /***Do-While**/
+        int arrayDWARSPCR(){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+                        int i,num;
+            printf("Usuarios a registrar\n");
+            scanf("%d",&num);
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+            return(1);
+        }
+    void operacionesRRSPCR(){
+        int m,m5;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(oneFARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(arrayFARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(oneWARSPCR())
+                                   printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(arrayWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                if(oneDWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                if(arrayDWARSPCR())
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+/***ARCPSR**/
+ /***For**/
+        void oneFARCPSR(float c){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            trabajador.costoHr=c;
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+        }
+    /***While**/
+        void oneWARCPSR(float c){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            trabajador.costoHr=c;
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+        }
+    /***Do-While**/
+        void oneDWARCPSR(float c){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+            printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            trabajador.costoHr=c;
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+        }
+    /***For**/
+        void arrayFARCPSR(int num){
+             struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i;
+            for(i=0;i<num;i++){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+            }
+            system("cls");
+            for(i=0;i<num;i++){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+            }
+        }
+    /***While**/
+        void arrayWARCPSR(int num){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i;
+
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+        }
+    /***Do-While**/
+        void arrayDWARCPSR(int num){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i;
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+        }
+    void operacionesRRCPSR(){
+        int m,m5,tam;
+        float a;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Costo Hora\n");
+                                scanf("%f",&a);
+                                oneFARCPSR(a);
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                arrayFARCPSR(tam);
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Costo Hora\n");
+                                scanf("%f",&a);
+                                oneWARCPSR(a);
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                arrayWARCPSR(tam);
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Costo Hora\n");
+                                scanf("%f",&a);
+                                oneDWARCPSR(a);
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                arrayDWARCPSR(tam);
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+/***ARCPCR**/
+    /***For**/
+        int oneFARCPCR(float c){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+                        printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            trabajador.costoHr=c;
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+            return(1);
+        }
+    /***While**/
+        int oneWARCPCR(float c){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+                        printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            trabajador.costoHr=c;
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+            return(1);
+        }
+    /***Do-While**/
+        int oneDWARCPCR(float c){
+            struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador;
+                        printf("Ingresa el Nombre\n");
+            fflush(stdin);
+            gets(trabajador.nombre);
+            printf("Ingresa el Departamento\n");
+            fflush(stdin);
+            gets(trabajador.departamento);
+            printf("Ingresa el puesto\n");
+            fflush(stdin);
+            gets(trabajador.puesto);
+
+            printf("Ingrese las horas trabajadas\n");
+            scanf("%d",&trabajador.hrsT);
+            printf("Ingrese El costo de hora\n");
+            trabajador.costoHr=c;
+
+            trabajador.sueldoB=trabajador.costoHr*trabajador.hrsT;
+            trabajador.impuestos=trabajador.sueldoB*.30;
+            trabajador.total=trabajador.sueldoB-trabajador.impuestos;
+
+            printf("El Nombre es %s\n",trabajador.nombre);
+            printf("El Departamento es %s\n",trabajador.departamento);
+            printf("El Puesto es %s\n",trabajador.puesto);
+            printf("Las Horas son %d\n",trabajador.hrsT);
+            printf("El Costo de horas es %.2f\n",trabajador.costoHr);
+            printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
+            printf("Los Impuestos son %.2f\n",trabajador.impuestos);
+            printf("El Sueldo Total es %.2f\n",trabajador.total);
+            return(1);
+        }
+    /***For**/
+        int arrayFARCPCR(int num){
+              struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i;
+            for(i=0;i<num;i++){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+            }
+            system("cls");
+            for(i=0;i<num;i++){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+            }
+            return(1);
+        }
+    /***While**/
+        int arrayWARCPCR(int num){
+              struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i;
+
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+            return(1);
+        }
+    /***Do-While**/
+        int arrayDWARCPCR(int num){
+              struct{
+                char nombre[20], departamento[20], puesto[20];
+                int hrsT;
+                float costoHr, sueldoB, impuestos, total;
+            } trabajador[100];
+            int i;
+            i=0;
+            while(i<num){
+                system("cls");
+                printf("Ingresa el Nombre\n");
+                fflush(stdin);
+                gets(trabajador[i].nombre);
+                printf("Ingresa el Departamento\n");
+                fflush(stdin);
+                gets(trabajador[i].departamento);
+                printf("Ingresa el puesto\n");
+                fflush(stdin);
+                gets(trabajador[i].puesto);
+
+                printf("Ingrese las horas trabajadas\n");
+                scanf("%d",&trabajador[i].hrsT);
+                printf("Ingrese El costo de hora\n");
+                scanf("%f",&trabajador[i].costoHr);
+
+                printf("\n");
+                trabajador[i].sueldoB=trabajador[i].costoHr*trabajador[i].hrsT;
+                trabajador[i].impuestos=trabajador[i].sueldoB*.30;
+                trabajador[i].total=trabajador[i].sueldoB-trabajador[i].impuestos;
+                i++;
+            }
+            system("cls");
+            i=0;
+            while(i<num){
+                printf("El Nombre es %s\n",trabajador[i].nombre);
+                printf("El Departamento es %s\n",trabajador[i].departamento);
+                printf("El Puesto es %s\n",trabajador[i].puesto);
+                printf("Las Horas son %d\n",trabajador[i].hrsT);
+                printf("El Costo de horas es %.2f\n",trabajador[i].costoHr);
+                printf("El Sueldo Base es %.2f\n",trabajador[i].sueldoB);
+                printf("Los Impuestos son %.2f\n",trabajador[i].impuestos);
+                printf("El Sueldo Total es %.2f\n",trabajador[i].total);
+
+                printf("\n\n");
+                i++;
+            }
+            return(1);
+        }
+    void operacionesRRCPCR(){
+        int m,m5,tam;
+        float a;
+        do{
+            system("cls");
+            printf("1 For\n2 While\n3 Do-While\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Costo Hora\n");
+                                scanf("%f",&a);
+                                if(oneFARCPCR(a))
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(arrayFARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Costo Hora\n");
+                                scanf("%f",&a);
+                                if(oneWARCPCR(a))
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(arrayWARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Introdusca su Costo Hora\n");
+                                scanf("%f",&a);
+                                if(oneDWARCPCR(a))
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introdusca su Tamaño\n");
+                                scanf("%d",&tam);
+                                if(arrayDWARCPCR(tam))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
+    }
+/***Fin**/
+
+
+/***Fin**/
