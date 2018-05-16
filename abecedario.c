@@ -1,3 +1,7 @@
+/* R.O Valentin Alejandro
+    F: 04/02/18
+    DP: Abecedario Ascendente Y Desendente
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

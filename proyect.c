@@ -1,3 +1,8 @@
+/*R.O Valentin Alejandro
+    F:16/03/18
+    DP:Proyecto
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -8,137 +13,6 @@
 
 
 
-void subMenu1(){
-    int m1;
-    do{
-        system("cls");
-        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
-        scanf("%d",&m1);
-        system("cls");
-        switch(m1){
-            case 1:
-                operacionesSPSR();
-            break;
-            case 2:
-                operacionesSPCR();
-            break;
-            case 3:
-                operacionesCPSR();
-            break;
-            case 4:
-                operacionesCPCR();
-            break;
-            case 5:
-            break;
-            default:
-                printf("Invalido\n");
-        }
-    }while(m1!=5);
-}
-
-void subMenu2(){
-    int m1;
-    do{
-        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
-        scanf("%d",&m1);
-        switch(m1){
-            case 1:
-                operacionesASPSR();
-            break;
-            case 2:
-                operacionesASPCR();
-            break;
-            case 3:
-                operacionesACPSR();
-            break;
-            case 4:
-                operacionesACPCR();
-            break;
-            case 5:
-            break;
-            default:
-                printf("Invalido\n");
-        }
-    }while(m1!=5);
-}
-
-void subMenu3(){
-    int m1;
-    do{
-        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
-        scanf("%d",&m1);
-        switch(m1){
-            case 1:
-                operacionesRSPSR();
-            break;
-            case 2:
-                operacionesRSPCR();
-            break;
-            case 3:
-                operacionesRCPSR();
-            break;
-            case 4:
-                operacionesRCPCR();
-            break;
-            case 5:
-            break;
-            default:
-                printf("Invalido\n");
-        }
-    }while(m1!=5);
-}
-
-void subMenu4(){
-    int m1;
-    do{
-        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
-        scanf("%d",&m1);
-        switch(m1){
-            case 1:
-                operacionesARSPSR();
-            break;
-            case 2:
-                operacionesARSPCR();
-            break;
-            case 3:
-                operacionesARCPSR();
-            break;
-            case 4:
-                operacionesARCPCR();
-            break;
-            case 5:
-            break;
-            default:
-                printf("Invalido\n");
-        }
-    }while(m1!=5);
-}
-
-void subMenu5(){
-    int m1;
-    do{
-        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
-        scanf("%d",&m1);
-        switch(m1){
-            case 1:
-                operacionesRRSPSR();
-            break;
-            case 2:
-                operacionesRRSPCR();
-            break;
-            case 3:
-                operacionesRRCPSR();
-            break;
-            case 4:
-                operacionesRRCPCR();
-            break;
-            case 5:
-            break;
-            default:
-                printf("Invalido\n");
-        }
-    }while(m1!=5);
-}
 
 /***SubMenu1**/
 void operacionesSPSR();
@@ -205,9 +79,54 @@ void operacionesCPCR();
 /*** Fin**/
 
 /***SubMenu2**/
+
+/***ASPSR**/
+    void simplesAbecedarioSPSR();
+    void simplesParesImparesSPSR();
+/***Dobles**/
+    void doblesAbecedarioSPSR();
+    void doblesParesImparesSPSR();
+/***Multiples**/
+    void MultiplesMesSPSR();
+    void MultiplesteclaSCPSR();
 void operacionesASPSR();
+
+/***ASPCR**/
+    int simplesAbecedarioSPCR();
+    int simplesParesImparesSPCR();
+/***Dobles**/
+    int doblesAbecedarioSPCR();
+    int doblesParesImparesSPCR();
+/***Multiples**/
+    int MultiplesMesSPCR();
+    int MultiplesteclasSPCR();
+
 void operacionesASPCR();
+
+
+/***ACPSR**/
+    void simplesAbecedarioCPSR(int);
+    void simplesParesImparesCPSR(int);
+/***Dobles**/
+    void doblesAbecedarioCPSR(int);
+    void doblesParesImparesCPSR(int);
+/***Multiples**/
+    void MultiplesMesCPSR(int);
+    void MultiplesteclasCPSR(char);
+
 void operacionesACPSR();
+
+
+/***ACPCR**/
+    int simplesAbecedarioCPCR(int);
+    int simplesParesImparesCPCR(int);
+/***Dobles**/
+    int doblesAbecedarioCPCR(int);
+    int doblesParesImparesCPCR(int);
+/***Multiples**/
+    int MultiplesMesCPCR(int);
+    int MultiplesteclasCPCR(char);
+
 void operacionesACPCR();
 
 /***FIN**/
@@ -293,26 +212,26 @@ void operacionesRSPCR();
 void operacionesRCPSR();
 
     /***For**/
-    void cuadroFRCPSR();
+    void cuadroFRCPSR(int);
     /***Fin**/
 
     /***While**/
-    void cuadroWRCPSR();
+    void cuadroWRCPSR(int);
     /***Fin**/
 
     /***Do-While**/
-    void cuadroDWRCPSR();
+    void cuadroDWRCPSR(int);
     /***Fin**/
 
 
     /***For**/
-    void flechaFRCPSR();
+    void flechaFRCPSR(int);
 
     /***While**/
-    void flechaWRCPSR();
+    void flechaWRCPSR(int);
 
     /***Do-While**/
-    void flechaDWRCPSR();
+    void flechaDWRCPSR(int);
 
 
 /***fIN**/
@@ -321,27 +240,27 @@ void operacionesRCPSR();
 void operacionesRCPCR();
 
     /***For**/
-    int cuadroFRCPCR();
+    int cuadroFRCPCR(int);
     /***Fin**/
 
     /***While**/
-    int cuadroWRCPCR();
+    int cuadroWRCPCR(int);
     /***Fin**/
 
     /***Do-While**/
-    int cuadroDWRCPCR();
+    int cuadroDWRCPCR(int);
     /***Fin**/
 
 
 
     /***For**/
-    int flechaFRCPCR();
+    int flechaFRCPCR(int);
 
     /***While**/
-    int flechaWRCPCR();
+    int flechaWRCPCR(int);
 
     /***Do-While**/
-    int flechaDWRCPCR();
+    int flechaDWRCPCR(int);
 
 
 /***Fin**/
@@ -388,35 +307,35 @@ void operacionesRCPCR();
 
 /***ARCPSR**/
     /***For**/
-        void sumaArreglosFARCPSR();
+        void sumaArreglosFARCPSR(int);
     /***While**/
-        void sumaArreglosWARCPSR();
+        void sumaArreglosWARCPSR(int);
     /***Do-While**/
-        void sumaArreglosDWARCPSR();
+        void sumaArreglosDWARCPSR(iny);
 
     /***For**/
-        void sumaParesImparesFARCPSR();
+        void sumaParesImparesFARCPSR(int);
     /***While**/
-        void sumaParesImparesWARCPSR();
+        void sumaParesImparesWARCPSR(int);
     /***Do-While**/
-        void sumaParesImparesDWARCPSR();
+        void sumaParesImparesDWARCPSR(int);
     void operacionesARCPSR();
 /***Fin**/
 
 /***ARCPCR**/
     /***For**/
-        int sumaArreglosFARCPCR();
+        int sumaArreglosFARCPCR(int);
     /***While**/
-        int sumaArreglosWARCPCR();
+        int sumaArreglosWARCPCR(int);
     /***Do-While**/
-        int sumaArreglosDWARCPCR();
+        int sumaArreglosDWARCPCR(int);
 
     /***For**/
-        int sumaParesImparesFARCPCR();
+        int sumaParesImparesFARCPCR(int);
     /***While**/
-        int sumaParesImparesWARCPCR();
+        int sumaParesImparesWARCPCR(int);
     /***Do-While**/
-        int sumaParesImparesDWARCPCR();
+        int sumaParesImparesDWARCPCR(int);
     void operacionesARCPCR();
 /***Fin**/
 
@@ -469,11 +388,11 @@ void operacionesRCPCR();
     /***Do-While**/
         void oneDWARCPSR(float);
     /***For**/
-        void arrayFARCPSR();
+        void arrayFARCPSR(int);
     /***While**/
-        void arrayWARCPSR();
+        void arrayWARCPSR(int);
     /***Do-While**/
-        void arrayDWARCPSR();
+        void arrayDWARCPSR(int);
 
     void operacionesRRCPSR();
 /***Fin**/
@@ -487,16 +406,154 @@ void operacionesRCPCR();
     /***Do-While**/
         int oneDWARCPCR(float);
     /***For**/
-        int arrayFARCPCR();
+        int arrayFARCPCR(int);
     /***While**/
-        int arrayWARCPCR();
+        int arrayWARCPCR(int);
     /***Do-While**/
-        int arrayDWARCPCR();
+        int arrayDWARCPCR(int);
     void operacionesRRCPCR();
 /***Fin**/
 
 
 /***Fin**/
+
+void subMenu1(){
+    int m1;
+    do{
+        system("cls");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        scanf("%d",&m1);
+        system("cls");
+        switch(m1){
+            case 1:
+                operacionesSPSR();
+            break;
+            case 2:
+                operacionesSPCR();
+            break;
+            case 3:
+                operacionesCPSR();
+            break;
+            case 4:
+                operacionesCPCR();
+            break;
+            case 5:
+            break;
+            default:
+                printf("Invalido\n");
+        }
+    }while(m1!=5);
+}
+
+void subMenu2(){
+    int m1;
+    do{
+        system("cls");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        scanf("%d",&m1);
+        switch(m1){
+            case 1:
+                operacionesASPSR();
+            break;
+            case 2:
+                operacionesASPCR();
+            break;
+            case 3:
+                operacionesACPSR();
+            break;
+            case 4:
+                operacionesACPCR();
+            break;
+            case 5:
+            break;
+            default:
+                printf("Invalido\n");
+        }
+    }while(m1!=5);
+}
+
+void subMenu3(){
+    int m1;
+    do{
+        system("cls");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        scanf("%d",&m1);
+        switch(m1){
+            case 1:
+                operacionesRSPSR();
+            break;
+            case 2:
+                operacionesRSPCR();
+            break;
+            case 3:
+                operacionesRCPSR();
+            break;
+            case 4:
+                operacionesRCPCR();
+            break;
+            case 5:
+            break;
+            default:
+                printf("Invalido\n");
+        }
+    }while(m1!=5);
+}
+
+void subMenu4(){
+    int m1;
+    do{
+        system("cls");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        scanf("%d",&m1);
+        switch(m1){
+            case 1:
+                operacionesARSPSR();
+            break;
+            case 2:
+                operacionesARSPCR();
+            break;
+            case 3:
+                operacionesARCPSR();
+            break;
+            case 4:
+                operacionesARCPCR();
+            break;
+            case 5:
+            break;
+            default:
+                printf("Invalido\n");
+        }
+    }while(m1!=5);
+}
+
+void subMenu5(){
+    int m1;
+    do{
+        system("cls");
+        printf("1 SPSR\n2 SPCR\n3 CPSR\n4 CPCR\n5 SALIR\n");
+        scanf("%d",&m1);
+        switch(m1){
+            case 1:
+                operacionesRRSPSR();
+            break;
+            case 2:
+                operacionesRRSPCR();
+            break;
+            case 3:
+                operacionesRRCPSR();
+            break;
+            case 4:
+                operacionesRRCPCR();
+            break;
+            case 5:
+            break;
+            default:
+                printf("Invalido\n");
+        }
+    }while(m1!=5);
+}
+
+
 
 main(){
     int m1;
@@ -537,30 +594,36 @@ main(){
 /***SPSR**/
     void sumSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
         printf("%d + %d es = %d\n",n1, n2, n1+n2);
+        getch();
     }
     void resSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
         printf("%d - %d es = %d\n",n1, n2, n1-n2);
+        getch();
     }
     void mulSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
          printf(" %d * %d es = %d\n",n1, n2, n1*n2);
+         getch();
     }
     void divSPSR(){
         int n1, n2;
@@ -570,25 +633,31 @@ main(){
         scanf("%d",&n2);
 
         printf("%d / %d es = %d\n",n1, n2, n1/n2);
+        getch();
     }
     void modSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
         printf("%d modulo %d es = %d\n",n1, n2, n1%n2);
+        getch();
     }
     void raiSPSR(){
         int n1;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
 
         printf("Raiz %.2f\n", sqrt(n1));
+        getch();
     }
     void potSPSR(){
         int n1, n2, n3;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
@@ -597,33 +666,40 @@ main(){
         scanf("%d",&n3);
 
         printf("potencia de %d a la %d = %.2f\npotencia de %d a la %d = %.2f\n",n1,n3, pow(n1,n3), n2,n3, pow(n2,n3));
+        getch();
     }
     void senSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
         printf("seno de %d es %.2f\nseno de %d es %.2f\n",n1, sin(n1),n2, sin(n2));
+        getch();
     }
     void cosSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
         printf("coseno de %d es %.2f\ncoseno de %d es %.2f\n",n1, cos(n1),n2, cos(n2));
+        getch();
     }
     void tanSPSR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
 
         printf("tangente de %d es %.2f\ntangente de %d es %.2f\n",n1, tan(n1),n2, tan(n2));
+        getch();
     }
 /***FIN**/
 
@@ -690,93 +766,113 @@ void operacionesSPSR(){
 /***SPCR**/
     int sumSPCR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
         printf("%d + %d es =",n1, n2);
 
+
          return(n1+n2);
     }
     int resSPCR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
         printf("%d - %d =", n1,n2);
 
+
         return(n1-n2);
     }
     int mulSPCR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
         printf("%d * %d es =",n1, n2);
 
+
         return(n1*n2);
     }
     float divSPCR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
         printf("%d / %d es =",n1, n2);
 
+
         return(n1/n2);
     }
     int modSPCR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su primer numero\n");
         scanf("%d",&n1);
         printf("Introdusca su segundo numero\n");
         scanf("%d",&n2);
         printf("%d modulo %d es =",n1, n2);
 
+
         return( n1%n2);
     }
     float raiSPCR(){
         int n1, n2;
+        system("cls");
         printf("Introsuca su numero\n");
         scanf("%d",&n1);
         printf("raiz =");
+
 
         return(sqrt(n1));
     }
     float potSPCR(){
         int n1,n2;
+        system("cls");
         printf("Introsuca su numero\n");
         scanf("%d",&n1);
         printf("Introsuca la potencia\n");
         scanf("%d",&n2);
         printf("potencia de %d a la %d =",n1,n2);
 
+
         return(pow(n1,n2));
     }
     float senSPCR(){
         int n1;
+        system("cls");
         printf("Introsuca su numero\n");
         scanf("%d",&n1);
         printf("seno de %d =",n1);
+        getch();
 
         return(sin(n1));
     }
     float cosSPCR(){
         int n1;
+        system("cls");
         printf("Introsuca su numero\n");
         scanf("%d",&n1);
         printf("coseno de %d =",n1);
+
 
         return(cos(n1));
     }
     float tanSPCR(){
         int n1;
+        system("cls");
         printf("Introsuca su numero\n");
         scanf("%d",&n1);
         printf("tangente de %d =",n1);
+
 
         return(tan(n1));
     }
@@ -845,34 +941,54 @@ void operacionesSPCR(){
 
 /***CPSR*/
     void sumCPSR(int n1,int n2){
+        system("cls");
          printf("%d + %d es %d\n",n1,n2, n1+n2);
+         getch();
     }
     void resCPSR(int n1,int n2){
+        system("cls");
          printf("%d - %d es %d\n",n1,n2, n1-n2);
+         getch();
     }
     void mulCPSR(int n1,int n2){
+        system("cls");
          printf("%d * %d es %d\n",n1,n2, n1*n2);
+         getch();
     }
     void divCPSR(int n1,int n2){
+        system("cls");
          printf("%d / %d es %d\n",n1,n2, n1/n2);
+         getch();
     }
     void modCPSR(int n1,int n2){
+        system("cls");
          printf("%d modulo %d es %d\n",n1,n2, n1%n2);
+         getch();
     }
     void raiCPSR(int n1){
+        system("cls");
          printf("%d Raiz es %.2f\n",n1,sqrt(n1));
+         getch();
     }
     void potCPSR(int n1,int n2){
+        system("cls");
          printf("%d pot %d es %.2f\n",n1,n2,pow(n1,n2));
+         getch();
     }
     void senCPSR(int n1){
+        system("cls");
         printf("%d seno es %.2f\n",n1, sin(n1));
+        getch();
     }
     void cosCPSR(int n1){
+        system("cls");
         printf("%d coseno es %.2f\n",n1, cos(n1));
+        getch();
     }
     void tanCPSR(int n1){
+        system("cls");
         printf("%d tan es %.2f\n",n1, tan(n1));
+        getch();
     }
 
 /***FIN**/
@@ -1113,6 +1229,7 @@ void operacionesCPCR(){
     void simplesAbecedarioSPSR(){
         int m, w, m5;
         char a ='a';
+        system("cls");
         printf("1 Ascendente o 2 Descendente\n");
         scanf("%d",&m5);
         if(m5 == 1){
@@ -1124,9 +1241,31 @@ void operacionesCPCR(){
                 printf("%c ",a);
             }
         }
+        getch();
+    }
+    void simplesParesImparesSPSR(){
+        int i;
+        system("cls");
+        printf("Introduzca número:");
+        scanf("%d",&i);
+
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        else
+        {
+           printf("Es impar.");
+        }
+        getch();
+
     }
 /***Dobles**/
     void doblesAbecedarioSPSR(){
+        int m5;
+        char a='a';
+        system("cls");
+        printf("1 Ascendente o 2 Descendente\n");
+        scanf("%d",&m5);
         if(m5 == 1){
                     for(a; a<='z'; a++){
                         printf("%c ",a);
@@ -1136,10 +1275,28 @@ void operacionesCPCR(){
                         printf("%c ",a);
                     }
                 }
+                getch();
+    }
+    void doblesParesImparesSPSR(){
+        int i;
+        system("cls");
+        printf("Introduzca número:");
+        scanf("%d",&i);
+
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        else
+        {
+           printf("Es impar.");
+        }
+        getch();
+
     }
 /***Multiples**/
     void doblesMesSPSR(){
         int mes;
+        system("cls");
         printf("Por favor introdusca el numero del mes \n");
         scanf("%d",&mes);
 
@@ -1160,10 +1317,13 @@ void operacionesCPCR(){
                 printf("Mes no encontrado");
 
         }
+        getch();
     }
     void doblesteclasSPSR(){
         char letra;
+        system("cls");
         printf("TECLEA UNA TECLA\n");
+        fflush(stdin);
         scanf("%c",&letra);
         switch(letra)
         {
@@ -1186,6 +1346,7 @@ void operacionesCPCR(){
             printf("CARACTER");
 
         }
+        getch();
     }
 
 void operacionesASPSR(){
@@ -1197,13 +1358,15 @@ void operacionesASPSR(){
             switch(m){
                 case 1:
                     do{
-                        printf("1 Abecedario\n2  \n3 Salir\n");
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar\n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
                                 simplesAbecedarioSPSR();
                             break;
                             case 2:
+                                simplesParesImparesSPSR();
                             break;
                             case 3:
                             break;
@@ -1214,14 +1377,15 @@ void operacionesASPSR(){
                 break;
                 case 2:
                     do{
-                        printf("1 Abecedario\n2 \n3 Salir");
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
                                 doblesAbecedarioSPSR();
                             break;
                             case 2:
-
+                                doblesParesImparesSPSR();
                             break;
                             case 3:
                             break;
@@ -1232,6 +1396,7 @@ void operacionesASPSR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Mes\n2 Teclas \n3 Salir");
                         scanf("%d",&m5);
                         switch(m5){
@@ -1264,6 +1429,7 @@ void operacionesASPSR(){
     int simplesAbecedarioSPCR(){
         int m, w, m5;
         char a ='a';
+        system("cls");
         printf("1 Ascendente o 2 Descendente\n");
         scanf("%d",&m5);
         if(m5 == 1){
@@ -1275,24 +1441,65 @@ void operacionesASPSR(){
                 printf("%c ",a);
             }
         }
+        getch();
+        return(1);
+    }
+    int simplesParesImparesSPCR(){
+        int i;
+        system("cls");
+        printf("Introduzca número:");
+        scanf("%d",&i);
+
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        if(i%2!=0)
+        {
+           printf("Es impar.");
+        }
+        getch();
         return(1);
     }
 /***Dobles**/
     int doblesAbecedarioSPCR(){
+        int m5;
+        char a='a';
+        system("cls");
+        printf("1 Ascendente o 2 Descendente\n");
+        scanf("%d",&m5);
         if(m5 == 1){
-                    for(a; a<='z'; a++){
-                        printf("%c ",a);
-                    }
-                }else{
-                    for(a='z'; a>='a'; a--){
-                        printf("%c ",a);
-                    }
+                for(a; a<='z'; a++){
+                    printf("%c ",a);
                 }
+        }else{
+            for(a='z'; a>='a'; a--){
+                    printf("%c ",a);
+                }
+            }
+            getch();
                 return(1);
+    }
+    int doblesParesImparesSPCR(){
+        int i;
+        system("cls");
+        printf("Introduzca número:");
+        scanf("%d",&i);
+
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        else
+        {
+           printf("Es impar.");
+        }
+        getch();
+        return(1);
+
     }
 /***Multiples**/
     int MultiplessMesSPCR(){
         int mes;
+        system("cls");
         printf("Por favor introdusca el numero del mes \n");
         scanf("%d",&mes);
 
@@ -1313,11 +1520,14 @@ void operacionesASPSR(){
                 printf("Mes no encontrado");
 
         }
+        getch();
         return(1);
     }
     int MultiplesteclasSPCR(){
         char letra;
+        system("cls");
         printf("TECLEA UNA TECLA\n");
+        fflush(stdin);
         scanf("%c",&letra);
         switch(letra)
         {
@@ -1340,6 +1550,7 @@ void operacionesASPSR(){
             printf("CARACTER");
 
         }
+        getch();
         return(1);
     }
 
@@ -1355,7 +1566,8 @@ void operacionesASPCR(){
             switch(m){
                 case 1:
                     do{
-                        printf("1 Abecedario\n2  \n3 Salir\n");
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
@@ -1363,6 +1575,8 @@ void operacionesASPCR(){
                                     printf("\n\n\n");
                             break;
                             case 2:
+                                if(simplesParesImparesSPCR())
+                                    printf("\n\n\n");
                             break;
                             case 3:
                             break;
@@ -1373,15 +1587,17 @@ void operacionesASPCR(){
                 break;
                 case 2:
                     do{
-                        printf("1 Abecedario\n2 \n3 Salir");
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
-                                if(doblesAbecedarioSPSCR())
+                                if(doblesAbecedarioSPCR())
                                     printf("\n\n\n");
                             break;
                             case 2:
-
+                                if(doblesParesImparesSPCR())
+                                    printf("\n\n\n");
                             break;
                             case 3:
                             break;
@@ -1392,6 +1608,7 @@ void operacionesASPCR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Mes\n2 Teclas \n3 Salir");
                         scanf("%d",&m5);
                         switch(m5){
@@ -1437,9 +1654,23 @@ void operacionesASPCR(){
                 printf("%c ",a);
             }
         }
+        getch();
     }
+    void simplesParesImparesCPSR(int i){
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        if(i%2!=0)
+        {
+           printf("Es impar.");
+        }
+        getch();
+    }
+
 /***Dobles**/
-    void doblesAbecedarioCPSR(){
+    void doblesAbecedarioCPSR(int m5){
+        char a='a';
+        system("cls");
         if(m5 == 1){
                     for(a; a<='z'; a++){
                         printf("%c ",a);
@@ -1448,12 +1679,24 @@ void operacionesASPCR(){
                     for(a='z'; a>='a'; a--){
                         printf("%c ",a);
                     }
+                    getch();
                 }
+    }
+    void doblesParesImparesCPSR(int i){
+        system("cls");
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        else
+        {
+           printf("Es impar.");
+        }
+        getch();
     }
 /***Multiples**/
     void MultiplesMesCPSR(int mes){
 
-
+        system("cls");
         switch(mes){
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                 printf("Tu mes tiene 31 dias");
@@ -1471,8 +1714,10 @@ void operacionesASPCR(){
                 printf("Mes no encontrado");
 
         }
+        getch();
     }
     void MultiplesteclasCPSR(char letra){
+        system("cls");
         switch(letra)
         {
         case 'a': case 'e': case 'i': case 'o': case 'u':
@@ -1494,11 +1739,13 @@ void operacionesASPCR(){
             printf("CARACTER");
 
         }
+        getch();
     }
 
 
 void operacionesACPSR(){
-        int m,m5,mes;
+        int m,m5,mes,i;
+        char letra;
         do{
             system("cls");
             printf("1 Simples\n2 Dobles\n3 Multiples\n4 Salir");
@@ -1506,15 +1753,20 @@ void operacionesACPSR(){
             switch(m){
                 case 1:
                     do{
-                        printf("1 Abecedario\n2  \n3 Salir\n");
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
                                 printf("1 Ascendente o 2 Descendente\n");
                                 scanf("%d",&m5);
                                 simplesAbecedarioCPSR(m5);
+
                             break;
                             case 2:
+                                printf("Introduzca número:");
+                                scanf("%d",&i);
+                                simplesParesImparesCPSR(i);
                             break;
                             case 3:
                             break;
@@ -1525,17 +1777,20 @@ void operacionesACPSR(){
                 break;
                 case 2:
                     do{
-                        printf("1 Abecedario\n2 \n3 Salir");
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
                                 printf("1 Ascendente o 2 Descendente\n");
                                 scanf("%d",&m5);
-                                doblesAbecedarioCPSR();
+                                doblesAbecedarioCPSR(m5);
 
                             break;
                             case 2:
-
+                                printf("Introduzca número:");
+                                scanf("%d",&i);
+                                doblesParesImparesCPSR(i);
                             break;
                             case 3:
                             break;
@@ -1546,6 +1801,7 @@ void operacionesACPSR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Mes\n2 Teclas \n3 Salir");
                         scanf("%d",&m5);
                         switch(m5){
@@ -1557,8 +1813,9 @@ void operacionesACPSR(){
                             break;
                             case 2:
                                 printf("TECLEA UNA TECLA\n");
+                                fflush(stdin);
                                 scanf("%c",&letra);
-                                MultiplesteclasCPSR();
+                                MultiplesteclasCPSR(letra);
 
                             break;
                             case 3:
@@ -1583,16 +1840,209 @@ void operacionesACPSR(){
 
 
 /***ACPCR**/
-/***Simples**/
-
+    int simplesAbecedarioCPCR(int m5){
+        int m, w;
+        char a ='a';
+        system("cls");
+        if(m5 == 1){
+            for(a; a<='z'; a++){
+                printf("%c ",a);
+            }
+        }if(m5!=1){
+            for(a='z'; a>='a'; a--){
+                printf("%c ",a);
+            }
+        }
+        getch();
+        return(1);
+    }
+    int simplesParesImparesCPCR(int i){
+        system("cls");
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        if(i%2!=0)
+        {
+           printf("Es impar.");
+        }
+        getch();
+        return(1);
+    }
 /***Dobles**/
-
+    int doblesAbecedarioCPCR(int m5){
+        char a='a';
+        system("cls");
+        if(m5 == 1){
+                    for(a; a<='z'; a++){
+                        printf("%c ",a);
+                    }
+                }else{
+                    for(a='z'; a>='a'; a--){
+                        printf("%c ",a);
+                    }
+                }
+                getch();
+                return(1);
+    }
+    int doblesParesImparesCPCR(int i){
+        system("cls");
+        if (i%2==0) {
+           printf("Es par.");
+        }
+        else
+        {
+           printf("Es impar.");
+        }
+        getch();
+        return(1);
+    }
 /***Multiples**/
+    int MultiplesMesCPCR(int mes){
+        system("cls");
+
+        switch(mes){
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                printf("Tu mes tiene 31 dias");
+                break;
+
+            case 2:
+                printf("Tu mes tiene 28 dias");
+                break;
+            case 4 : case 6: case 9: case 11:
+                printf("Tu mes tiene 30 dias");
+                break;
+
+
+            default:
+                printf("Mes no encontrado");
+
+        }
+        getch();
+        return(1);
+    }
+    int MultiplesteclasCPCR(char letra){
+        system("cls");
+        switch(letra)
+        {
+        case 'a': case 'e': case 'i': case 'o': case 'u':
+        case 'A': case 'E': case 'I': case 'O': case 'U':
+            printf("VOCAL"); break;
+        case 'b': case 'c': case 'd': case 'f': case 'g': case 'h':
+        case 'j': case 'k': case 'l': case 'm':
+        case 'n': case 'p': case 'q': case 'r': case 's':
+        case 't': case 'w': case 'x': case 'y': case 'z':
+        case 'B': case 'C': case 'D': case 'F': case 'G':
+        case 'H': case 'J': case 'K': case 'L': case 'M': case 'N':
+        case 'P': case 'Q': case 'R': case 'S': case 'T':
+        case 'W': case 'X': case 'Y': case 'Z':
+            printf("CONSONANTE"); break;
+        case '1': case '2': case '3': case '4': case '5':
+        case '6': case '7': case '8': case '9': case '0':
+            printf("DIGITO");break;
+        default:
+            printf("CARACTER");
+
+        }
+        getch();
+        return(1);
+    }
 
 
 
 
 void operacionesACPCR(){
+            int m,m5,mes,i;
+            char letra;
+        do{
+            system("cls");
+            printf("1 Simples\n2 Dobles\n3 Multiples\n4 Salir");
+            scanf("%d",&m);
+            switch(m){
+                case 1:
+                    do{
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir\n");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("1 Ascendente o 2 Descendente\n");
+                                scanf("%d",&m5);
+                                if(simplesAbecedarioCPCR(m5))
+                                    printf("\n\n\n");
+                            break;
+                            case 2:
+                                printf("Introduzca número:");
+                                scanf("%d",&i);
+                                if(simplesParesImparesCPCR(i))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 2:
+                    do{
+                        system("cls");
+                        printf("1 Abecedario\n2 Par O Impar \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("1 Ascendente o 2 Descendente\n");
+                                scanf("%d",&m5);
+                                if(doblesAbecedarioCPCR(m5))
+                                    printf("\n\n\n");
+
+                            break;
+                            case 2:
+                                printf("Introduzca número:");
+                                scanf("%d",&i);
+                                if(doblesParesImparesCPCR(i))
+                                    printf("\n\n\n");
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case 3:
+                    do{
+                        system("cls");
+                        printf("1 Mes\n2 Teclas \n3 Salir");
+                        scanf("%d",&m5);
+                        switch(m5){
+                            case 1:
+                                printf("Por favor introdusca el numero del mes \n");
+                                scanf("%d",&mes);
+                                if(MultiplesMesCPCR(mes))
+                                    printf("\n\n\n");
+
+                            break;
+                            case 2:
+                                printf("TECLEA UNA TECLA\n");
+                                fflush(stdin);
+                                scanf("%c",&letra);
+                                if(MultiplesteclasCPCR(letra))
+                                    printf("\n\n\n");
+
+                            break;
+                            case 3:
+                            break;
+                            default:
+                                printf("Incorrecto/n");
+                        }
+                    }while(m5!=3);
+                break;
+                case  4:
+                break;
+                default:
+                    printf("Incorrecto/n");
+            }
+        }while(m!=4);
 }
 
 /***Fin**/
@@ -1661,6 +2111,7 @@ void operacionesACPCR(){
                 }
 
             printf("\n\n\n");
+            getch();
         }
     /***While**/
         void cuadroWRSPSR(){
@@ -1719,6 +2170,7 @@ void operacionesACPCR(){
                 }
 
             printf("\n\n\n");
+            getch();
         }
     /***Do-While**/
         void cuadroDWRSPSR(){
@@ -1775,6 +2227,7 @@ void operacionesACPCR(){
                     tam--;
                     i++;
                 }while(i<tam);
+                getch();
         }
 
     /***For**/
@@ -1782,7 +2235,7 @@ void operacionesACPCR(){
             int m,i,j,k,c,e,t;
             printf("Introdusca su Tamaño\n");
             scanf("%d",&t);
-
+            system("cls");
             printf("\toperacion realizada con el ciclo For\n");
                 c=t+1;
                 e=t;
@@ -1821,13 +2274,14 @@ void operacionesACPCR(){
                     }
                     printf("\n");
                 }
+                getch();
         }
     /***While**/
         void flechaWRSPSR(){
             int m,i,j,k,c,e,t;
             printf("Introdusca su Tamaño\n");
             scanf("%d",&t);
-
+            system("cls");
             printf("\toperacion realizada con el ciclo While\n");
                 c=t+1;
                 e=t;
@@ -1877,6 +2331,7 @@ void operacionesACPCR(){
                     printf("\n");
                     i++;
                 }
+                getch();
 
         }
     /***Do-While**/
@@ -1885,7 +2340,7 @@ void operacionesACPCR(){
             printf("Introdusca su Tamaño\n");
             scanf("%d",&t);
             printf("\toperacion realizada con el ciclo Do-While\n");
-
+            system("cls");
                 c=t+1;
                 e=t;
                 i=1;
@@ -1934,6 +2389,7 @@ void operacionesACPCR(){
                     printf("\n");
                     i++;
                 } while(i<=2);
+                getch();
         }
 
 void operacionesRSPSR(){
@@ -1945,6 +2401,7 @@ void operacionesRSPSR(){
         switch(m){
             case 1:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 Flecha \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
@@ -1963,6 +2420,7 @@ void operacionesRSPSR(){
             break;
             case 2:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 Flecha \n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -1981,6 +2439,7 @@ void operacionesRSPSR(){
             break;
             case 3:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 Flecha\n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2059,6 +2518,7 @@ void operacionesRSPSR(){
                 }
 
             printf("\n\n\n");
+            getch();
         }
     /***While**/
     void cuadroWRCPSR(int tam){
@@ -2115,6 +2575,7 @@ void operacionesRSPSR(){
                     }
 
                 printf("\n\n\n");
+                getch();
         }
     /***Do-While**/
     void cuadroDWRCPSR(int tam){
@@ -2169,11 +2630,13 @@ void operacionesRSPSR(){
                     tam--;
                     i++;
                 }while(i<tam);
+                getch();
         }
 
     /***For**/
         void flechaFRCPSR(int t){
             int m,i,j,k,c,e;
+            system("cls");
                 printf("\toperacion realizada con el ciclo For\n");
                 c=t+1;
                 e=t;
@@ -2212,10 +2675,12 @@ void operacionesRSPSR(){
                     }
                     printf("\n");
                 }
+                getch();
         }
     /***While**/
         void flechaWRCPSR(int t){
             int m,i,j,k,c,e;
+            system("cls");
                 printf("\toperacion realizada con el ciclo While\n");
                 c=t+1;
                 e=t;
@@ -2265,10 +2730,12 @@ void operacionesRSPSR(){
                     printf("\n");
                     i++;
                 }
+                getch();
         }
     /***Do-While**/
         void flechaDWRCPSR(int t){
             int m,i,j,k,c,e;
+            system("cls");
                 printf("\toperacion realizada con el ciclo Do-While\n");
                 c=t+1;
                 e=t;
@@ -2318,6 +2785,7 @@ void operacionesRSPSR(){
                     printf("\n");
                     i++;
                 } while(i<=2);
+                getch();
         }
 
 
@@ -2330,6 +2798,7 @@ void operacionesRSPSR(){
         switch(m){
             case 1:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 Flecha \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2352,6 +2821,7 @@ void operacionesRSPSR(){
             break;
             case 2:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 \n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2374,6 +2844,7 @@ void operacionesRSPSR(){
             break;
             case 3:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 While\n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2455,7 +2926,7 @@ void operacionesRSPSR(){
                     tam--;
 
                 }
-
+            getch();
             return(1);
         }
     /***While**/
@@ -2513,7 +2984,7 @@ void operacionesRSPSR(){
                         tam--;
                         i++;
                     }
-
+                getch();
                 return(1);
         }
     /***Do-While**/
@@ -2573,7 +3044,7 @@ void operacionesRSPSR(){
                     tam--;
                     i++;
                 }while(i<tam);
-
+            getch();
             return(1);
         }
 
@@ -2584,6 +3055,7 @@ void operacionesRSPSR(){
             scanf("%d",&t);
 
             printf("\toperacion realizada con el ciclo For\n");
+            system("cls");
                 c=t+1;
                 e=t;
                 for(i=0; i<=t;i++){
@@ -2621,6 +3093,7 @@ void operacionesRSPSR(){
                     }
                     printf("\n");
                 }
+                getch();
                 return(1);
         }
     /***While**/
@@ -2630,6 +3103,7 @@ void operacionesRSPSR(){
             scanf("%d",&t);
 
             printf("\toperacion realizada con el ciclo While\n");
+            system("cls");
                 c=t+1;
                 e=t;
                 i=0;
@@ -2678,6 +3152,7 @@ void operacionesRSPSR(){
                     printf("\n");
                     i++;
                 }
+                getch();
                 return(1);
         }
     /***Do-While**/
@@ -2686,6 +3161,7 @@ void operacionesRSPSR(){
             printf("Introdusca su Tamaño\n");
             scanf("%d",&t);
             printf("\toperacion realizada con el ciclo Do-While\n");
+            system("cls");
 
                 c=t+1;
                 e=t;
@@ -2735,6 +3211,7 @@ void operacionesRSPSR(){
                     printf("\n");
                     i++;
                 } while(i<=2);
+                getch();
                 return(1);
         }
 
@@ -2747,6 +3224,7 @@ void operacionesRSPCR(){
         switch(m){
             case 1:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2767,6 +3245,7 @@ void operacionesRSPCR(){
             break;
             case 2:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 \n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2787,6 +3266,7 @@ void operacionesRSPCR(){
             break;
             case 3:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 While\n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -2862,7 +3342,7 @@ void operacionesRSPCR(){
                     tam--;
 
                 }
-
+            getch();
             return(1);
         }
     /***While**/
@@ -2918,7 +3398,7 @@ void operacionesRSPCR(){
                         tam--;
                         i++;
                     }
-
+                getch();
                 return(1);
                 }
     /***Do-While**/
@@ -2974,6 +3454,7 @@ void operacionesRSPCR(){
                     tam--;
                     i++;
                 }while(i<tam);
+                getch();
                 return(1);
         }
 
@@ -2983,6 +3464,7 @@ void operacionesRSPCR(){
 
 
             printf("\toperacion realizada con el ciclo For\n");
+            system("cls");
                 c=t+1;
                 e=t;
                 for(i=0; i<=t;i++){
@@ -3020,6 +3502,7 @@ void operacionesRSPCR(){
                     }
                     printf("\n");
                 }
+                getch();
                 return(1);
         }
     /***While**/
@@ -3028,6 +3511,7 @@ void operacionesRSPCR(){
 
 
             printf("\toperacion realizada con el ciclo While\n");
+            system("cls");
                 c=t+1;
                 e=t;
                 i=0;
@@ -3076,12 +3560,14 @@ void operacionesRSPCR(){
                     printf("\n");
                     i++;
                 }
+                getch();
                 return(1);
         }
     /***Do-While**/
         int flechaDWRCPCR(int t){
             int m,i,j,k,c,e;
             printf("\toperacion realizada con el ciclo Do-While\n");
+            system("cls");
 
                 c=t+1;
                 e=t;
@@ -3131,6 +3617,7 @@ void operacionesRSPCR(){
                     printf("\n");
                     i++;
                 } while(i<=2);
+                getch();
                 return(1);
         }
 
@@ -3144,6 +3631,7 @@ void operacionesRCPCR(){
         switch(m){
             case 1:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 Flecha \n3 Salir\n");
                     scanf("%d",&m5);
                     switch(m5){
@@ -3168,6 +3656,7 @@ void operacionesRCPCR(){
             break;
             case 2:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 \n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -3192,6 +3681,7 @@ void operacionesRCPCR(){
             break;
             case 3:
                 do{
+                    system("cls");
                     printf("1 Cuadro\n2 While\n3 Salir");
                     scanf("%d",&m5);
                     switch(m5){
@@ -3235,6 +3725,7 @@ void operacionesRCPCR(){
         void sumaArreglosFARSPSR(){
             int tam=100;
             int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             system("cls");
@@ -3259,11 +3750,14 @@ void operacionesRCPCR(){
             for(i=0;i<t;i++){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
             }
+                            getch();
+
         }
     /***While**/
         void sumaArreglosWARSPSR(){
             int tam=100;
             int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             system("cls");
@@ -3295,11 +3789,13 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }
+            getch();
         }
     /***Do-While**/
         void sumaArreglosDWARSPSR(){
             int tam=100;
             int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             system("cls");
@@ -3331,6 +3827,7 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }while(i<t);
+            getch();
         }
 
     /***For**/
@@ -3341,6 +3838,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             printf("Ingrese Los Elementos de lista 1\n");
@@ -3363,6 +3861,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
         }
     /***While**/
         void sumaParesImparesWARSPSR(){
@@ -3372,6 +3871,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             printf("Ingrese Los Elementos de lista 1\n");
@@ -3396,6 +3896,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
         }
     /***Do-While**/
         void sumaParesImparesDWARSPSR(){
@@ -3405,6 +3906,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             printf("Ingrese Los Elementos de lista 1\n");
@@ -3429,6 +3931,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
         }
 
     void operacionesARSPSR(){
@@ -3440,6 +3943,7 @@ void operacionesRCPCR(){
             switch(m){
                 case 1:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos(Bidimensional)\n2 Mostrar(Unidimensional) \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -3458,6 +3962,7 @@ void operacionesRCPCR(){
                 break;
                 case 2:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos (Bidimensional)\n2 Pares E Impares (Unidimensional) \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -3476,6 +3981,7 @@ void operacionesRCPCR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos (Bidimensional)\n2 Pares E Impares (Unidimensional) \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -3508,10 +4014,11 @@ void operacionesRCPCR(){
     /***For**/
         int sumaArreglosFARSPCR(){
             int tam=100;
+            system("cls");
             int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
-            system("cls");
+
             printf("Ingrese Los Elementos de lista 1\n");
             for(i=0;i<t;i++){
                 printf("Elemento %d ",i+1);
@@ -3533,15 +4040,16 @@ void operacionesRCPCR(){
             for(i=0;i<t;i++){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
             }
+            getch();
             return(1);
         }
     /***While**/
         int sumaArreglosWARSPCR(){
             int tam=100;
             int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
-            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             while(i<t){
@@ -3570,15 +4078,16 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }
+            getch();
             return(1);
         }
     /***Do-While**/
         int sumaArreglosDWARSPCR(){
             int tam=100;
             int t, lista[tam],lista2[tam], lista3[tam],m,i,r;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
-            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             do{
@@ -3607,6 +4116,7 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }while(i<t);
+            getch();
             return(1);
         }
 
@@ -3618,6 +4128,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             printf("Ingrese Los Elementos de lista 1\n");
@@ -3640,6 +4151,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
             return(1);
         }
     /***While**/
@@ -3650,6 +4162,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             printf("Ingrese Los Elementos de lista 1\n");
@@ -3674,6 +4187,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -3684,6 +4198,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Por favor ingrese el tamaño de la lista \n");
             scanf("%d",&t);
             printf("Ingrese Los Elementos de lista 1\n");
@@ -3708,6 +4223,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
             return(1);
         }
 
@@ -3720,6 +4236,7 @@ void operacionesRCPCR(){
             switch(m){
                 case 1:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -3740,6 +4257,7 @@ void operacionesRCPCR(){
                 break;
                 case 2:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -3760,6 +4278,7 @@ void operacionesRCPCR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -3816,6 +4335,7 @@ void operacionesRCPCR(){
             for(i=0;i<t;i++){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
             }
+            getch();
         }
     /***While**/
         void sumaArreglosWARCPSR(int t){
@@ -3850,6 +4370,7 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }
+            getch();
         }
     /***Do-While**/
         void sumaArreglosDWARCPSR(int t){
@@ -3884,6 +4405,7 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }while(i<t);
+            getch();
         }
 
     /***For**/
@@ -3894,6 +4416,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             for(i=0;i<t;i++){
                 printf("Elemento %d ",i+1);
@@ -3914,6 +4437,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
         }
     /***While**/
         void sumaParesImparesWARCPSR(int t){
@@ -3923,6 +4447,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             while(i<t){
@@ -3945,6 +4470,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
         }
     /***Do-While**/
         void sumaParesImparesDWARCPSR(int t){
@@ -3954,6 +4480,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             do{
@@ -3976,6 +4503,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
         }
 
     void operacionesARCPSR(){
@@ -3987,6 +4515,7 @@ void operacionesRCPCR(){
             switch(m){
                 case 1:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4011,6 +4540,7 @@ void operacionesRCPCR(){
                 break;
                 case 2:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4035,6 +4565,7 @@ void operacionesRCPCR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4093,6 +4624,7 @@ void operacionesRCPCR(){
             for(i=0;i<t;i++){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
             }
+            getch();
             return(1);
         }
     /***While**/
@@ -4128,6 +4660,7 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -4163,6 +4696,7 @@ void operacionesRCPCR(){
                 printf("%d\t\t  %d\t\t %d\t\t %d\n", i,lista[i],lista2[i],lista3[i]);
                 i++;
             }while(i<t);
+            getch();
             return(1);
         }
 
@@ -4174,6 +4708,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             for(i=0;i<t;i++){
                 printf("Elemento %d ",i+1);
@@ -4194,6 +4729,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
             return(1);
         }
     /***While**/
@@ -4204,6 +4740,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             while(i<t){
@@ -4226,6 +4763,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -4236,6 +4774,7 @@ void operacionesRCPCR(){
             imparC=0;
             par=0;
             impar=0;
+            system("cls");
             printf("Ingrese Los Elementos de lista 1\n");
             i=0;
             do{
@@ -4258,6 +4797,7 @@ void operacionesRCPCR(){
 
             printf("\n");
             printf("suma de pares:%d\ncantidad de pares:%d\nsuma de impares:%d\ncantidad de impares:%d\n",par,parC,impar,imparC);
+            getch();
             return(1);
         }
 
@@ -4270,6 +4810,7 @@ void operacionesRCPCR(){
             switch(m){
                 case 1:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4294,6 +4835,7 @@ void operacionesRCPCR(){
                 break;
                 case 2:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4318,6 +4860,7 @@ void operacionesRCPCR(){
                 break;
                 case 3:
                     do{
+                        system("cls");
                         printf("1 Suma Arreglos\n2 Pares E Impares \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4364,6 +4907,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -4391,6 +4935,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
         }
     /***While**/
         void oneWARSPSR(){
@@ -4399,7 +4944,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
-
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -4427,6 +4972,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
         }
     /***Do-While**/
         void oneDWARSPSR(){
@@ -4435,6 +4981,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -4462,6 +5009,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
         }
     /***For**/
         void arrayFARSPSR(){
@@ -4471,6 +5019,7 @@ void operacionesRCPCR(){
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
             int i,num;
+            system("cls");
             printf("Usuarios a registrar\n");
             scanf("%d",&num);
             for(i=0;i<num;i++){
@@ -4508,6 +5057,7 @@ void operacionesRCPCR(){
 
                 printf("\n\n");
             }
+            getch();
         }
     /***While**/
         void arrayWARSPSR(){
@@ -4516,7 +5066,8 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
-                        int i,num;
+            int i,num;
+            system("cls");
             printf("Usuarios a registrar\n");
             scanf("%d",&num);
             i=0;
@@ -4558,6 +5109,7 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
         }
     /***Do-While**/
         void arrayDWARSPSR(){
@@ -4567,6 +5119,7 @@ void operacionesRCPCR(){
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
             int i,num;
+            system("cls");
             printf("Usuarios a registrar\n");
             scanf("%d",&num);
             i=0;
@@ -4618,6 +5171,7 @@ void operacionesRCPCR(){
             switch(m){
                 case 1:
                     do{
+                        system("cls");
                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4636,7 +5190,8 @@ void operacionesRCPCR(){
                 break;
                 case 2:
                     do{
-                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        system("cls");
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
@@ -4654,7 +5209,8 @@ void operacionesRCPCR(){
                 break;
                 case 3:
                     do{
-                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        system("cls");
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
@@ -4687,6 +5243,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -4714,6 +5271,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
             return(1);
         }
     /***While**/
@@ -4723,6 +5281,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -4750,6 +5309,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -4759,6 +5319,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -4786,6 +5347,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
             return(1);
         }
     /***For**/
@@ -4796,6 +5358,7 @@ void operacionesRCPCR(){
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
             int i,num;
+            system("cls");
             printf("Usuarios a registrar\n");
             scanf("%d",&num);
             for(i=0;i<num;i++){
@@ -4833,6 +5396,7 @@ void operacionesRCPCR(){
 
                 printf("\n\n");
             }
+            getch();
             return(1);
         }
     /***While**/
@@ -4842,7 +5406,8 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
-                        int i,num;
+            int i,num;
+            system("cls");
             printf("Usuarios a registrar\n");
             scanf("%d",&num);
             i=0;
@@ -4884,6 +5449,7 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -4893,7 +5459,8 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
-                        int i,num;
+            int i,num;
+            system("cls");
             printf("Usuarios a registrar\n");
             scanf("%d",&num);
             i=0;
@@ -4935,6 +5502,7 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
             return(1);
         }
     void operacionesRRSPCR(){
@@ -4946,6 +5514,7 @@ void operacionesRCPCR(){
             switch(m){
                 case 1:
                     do{
+                        system("cls");
                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
@@ -4966,7 +5535,8 @@ void operacionesRCPCR(){
                 break;
                 case 2:
                     do{
-                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        system("cls");
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
@@ -4986,7 +5556,8 @@ void operacionesRCPCR(){
                 break;
                 case 3:
                     do{
-                         printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
+                        system("cls");
+                        printf("1 Estructura\n2 Arreglo De Estructura \n3 Salir\n");
                         scanf("%d",&m5);
                         switch(m5){
                             case 1:
@@ -5021,6 +5592,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -5048,6 +5620,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
         }
     /***While**/
         void oneWARCPSR(float c){
@@ -5056,6 +5629,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -5083,6 +5657,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
         }
     /***Do-While**/
         void oneDWARCPSR(float c){
@@ -5091,6 +5666,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
             printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -5118,6 +5694,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
         }
     /***For**/
         void arrayFARCPSR(int num){
@@ -5127,6 +5704,7 @@ void operacionesRCPCR(){
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
             int i;
+            system("cls");
             for(i=0;i<num;i++){
                 system("cls");
                 printf("Ingresa el Nombre\n");
@@ -5162,6 +5740,7 @@ void operacionesRCPCR(){
 
                 printf("\n\n");
             }
+            getch();
         }
     /***While**/
         void arrayWARCPSR(int num){
@@ -5171,6 +5750,7 @@ void operacionesRCPCR(){
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
             int i;
+            system("cls");
 
             i=0;
             while(i<num){
@@ -5211,6 +5791,7 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
         }
     /***Do-While**/
         void arrayDWARCPSR(int num){
@@ -5220,6 +5801,7 @@ void operacionesRCPCR(){
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
             int i;
+            system("cls");
             i=0;
             while(i<num){
                 system("cls");
@@ -5259,10 +5841,12 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
         }
     void operacionesRRCPSR(){
         int m,m5,tam;
         float a;
+        system("cls");
         do{
             system("cls");
             printf("1 For\n2 While\n3 Do-While\n4 Salir");
@@ -5351,7 +5935,8 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
-                        printf("Ingresa el Nombre\n");
+            system("cls");
+            printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
             printf("Ingresa el Departamento\n");
@@ -5378,6 +5963,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
             return(1);
         }
     /***While**/
@@ -5387,6 +5973,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
                         printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -5414,6 +6001,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -5423,6 +6011,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador;
+            system("cls");
                         printf("Ingresa el Nombre\n");
             fflush(stdin);
             gets(trabajador.nombre);
@@ -5450,6 +6039,7 @@ void operacionesRCPCR(){
             printf("El Sueldo Base es %.2f\n",trabajador.sueldoB);
             printf("Los Impuestos son %.2f\n",trabajador.impuestos);
             printf("El Sueldo Total es %.2f\n",trabajador.total);
+            getch();
             return(1);
         }
     /***For**/
@@ -5459,6 +6049,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
+            system("cls");
             int i;
             for(i=0;i<num;i++){
                 system("cls");
@@ -5495,6 +6086,7 @@ void operacionesRCPCR(){
 
                 printf("\n\n");
             }
+            getch();
             return(1);
         }
     /***While**/
@@ -5504,6 +6096,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
+            system("cls");
             int i;
 
             i=0;
@@ -5545,6 +6138,7 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
             return(1);
         }
     /***Do-While**/
@@ -5554,6 +6148,7 @@ void operacionesRCPCR(){
                 int hrsT;
                 float costoHr, sueldoB, impuestos, total;
             } trabajador[100];
+            system("cls");
             int i;
             i=0;
             while(i<num){
@@ -5594,11 +6189,13 @@ void operacionesRCPCR(){
                 printf("\n\n");
                 i++;
             }
+            getch();
             return(1);
         }
     void operacionesRRCPCR(){
         int m,m5,tam;
         float a;
+        system("cls");
         do{
             system("cls");
             printf("1 For\n2 While\n3 Do-While\n4 Salir");

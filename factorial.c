@@ -1,3 +1,7 @@
+/* R.O Valentin Alejandro
+    F: 04/02/18
+    DP: Factorial
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>

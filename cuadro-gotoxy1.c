@@ -1,6 +1,6 @@
 /*R.O Valentin Alejandro
     F:13/03/18
-    DP:Cuadro-Gotoxy 1
+    DP:Cuadro-Gotoxy
 */
 #include <stdio.h>
 #include <stdlib.h>

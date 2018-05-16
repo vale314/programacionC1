@@ -1,3 +1,7 @@
+/* R.O Valentin Alejandro
+    F: 04/02/18
+    DP: Area de Figuras
+*/
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>

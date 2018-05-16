@@ -1,7 +1,7 @@
 /*
     R.O.Valentin Alejandro
     F:04/02/18
-    dP:operaciones
+    dP:Operaciones
 */
 #include <stdio.h>
 #include <conio.h>

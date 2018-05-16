@@ -1,3 +1,8 @@
+/* R.O Valentin Alejandro
+    F: 04/02/18
+    DP: Cubos mayores y Cubos Anteriores
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
